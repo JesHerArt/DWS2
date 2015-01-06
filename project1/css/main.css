@@ -1,0 +1,143 @@
+/* 
+		Jessica J. Hernandez
+		Week 1 - Site 1
+		DWS-2 201501-01
+		January 06, 2015
+ */
+
+
+/* _____________________________________ */
+/*              MAIN STYLES              */
+/* _____________________________________ */
+
+body {
+	line-height: 1.5em;
+	}
+	
+#container {
+	width: 1000px;
+	margin: 0 auto;
+	}
+	
+#mainContent {
+	padding: 20px;
+	}
+	
+
+
+
+
+/* _____________________________________ */
+/*              NAVIGATION               */
+/* _____________________________________ */
+
+nav {
+	margin: 50px auto 20px auto;
+	text-align: center;
+	font-weight: bold;
+	}
+	
+nav + ul {
+	list-style-type: none;
+	}
+	
+nav li {
+	display: inline-block;
+	margin: 0 90px 0 0;
+	}
+	
+nav li:last-child {
+	margin: 0;
+	}
+
+
+/* _____________________________________ */
+/*           HEADINGS & TEXT             */
+/* _____________________________________ */
+
+h1 {
+	text-align: center;
+	}
+
+h3 {
+	margin-bottom: 0;
+	}
+	
+h3 + p {
+	font-style: italic;
+	margin-top: 0;
+	line-height: 1.2em;
+	}
+	
+div[class="imagePlaceholder"] > p {
+	text-align: center;
+	font-size: 0.8em;
+	line-height: 1.1em;
+	margin: 0 0 20px 0;
+	}
+	
+span:first-child {
+	font-weight: bold;
+	}
+	
+#production {
+	clear: both;
+	}
+
+
+/* _____________________________________ */
+/*                IMAGES                 */
+/* _____________________________________ */
+
+img {
+	max-width: 100%;
+	}
+	
+.imagePlaceholder {
+	width: 225px;
+	margin: 0 20px 0 0;
+	float: left
+	}
+	
+.imagePlaceholder:nth-child(4n + 1) {
+	margin: 0;
+	}
+
+.imagePlaceholder:nth-child(4n + 2) {
+	clear: both;
+	}
+
+#headerImage {
+	width: 960px;
+	margin: 0 auto;
+	}
+	
+img {
+	border: 2px solid yellow;
+	}
+
+
+
+/* _____________________________________ */
+/*             MEDIA QUERIES             */
+/* _____________________________________ */
+
+/* Smartphones (portrait) */
+@media only screen and (max-width : 320px) {
+	/* Styles */
+	}
+
+/* Smartphones (landscape) */
+@media only screen and (max-device-width : 480px) {
+	/* Styles */
+	}
+
+/* Tablets (portrait) */
+@media only screen and (min-device-width : 768px) 
+	and (max-device-width : 1024px) and (orientation : portrait) {
+	/* Styles */
+	}
+	
+@-ms-viewport{
+	width: device-width;
+	}
