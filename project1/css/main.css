@@ -179,26 +179,17 @@ img {
 /* _____________________________________ */	
 
 #production-table {
-	width: 100px;
-	}
-
-table {
-/* 	margin: auto; */
+	margin: auto;
 	border-collapse: collapse;
 	border: 2px solid #333;
-/* 	width: 200px; */
+	width: 60%;
 	background: #ecf0f1;
-/* 
-	vertical-align: center;
 	text-align: center;
- */
 	}
 	
-/* 
 tr {
 	height: 2.2em;
 	}
- */
 	
 tr:nth-child(2n) {
 	background: #95a5a6;
@@ -217,7 +208,7 @@ tr:hover {
 	}
 	
 th {
-	/* width: 50%; */
+	width: 50%;
 	border-right: 1px dotted #fff;
 	}
 
@@ -294,7 +285,7 @@ th {
 		}
 	
 	#production-table {
-		width: 100%;
+		width: 80%;
 		}
 		
 	h1 {
