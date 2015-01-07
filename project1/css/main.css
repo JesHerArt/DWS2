@@ -12,33 +12,34 @@
 
 body {
 	font-family: 'Titillium Web', sans-serif;
-	line-height: 1.5em;
+	line-height: 150%;
 	background: #FFAA1C;
-	
 	}
 	
 #container {
-	width: 1000px;
+	width: 73.99999%; /* 1040px */
 	margin: 0 auto;
 	background: #FFE271;
+	padding-bottom: 0.96153846%; /* 10px/1040px */
 	}
 	
 #mainContent {
-	padding: 20px;
-	margin-top: 0;
+	padding: 2.08333333% 3.8461585%; /* 20px/960px   40px/1040px */
 	}
 	
-header {
-	margin-top: 0;
+#about, #types {
+	width: 47.91666667%;   /* 460px / 960px */
+	float: left;
 	}
 	
 
+	
 /* _____________________________________ */
 /*              NAVIGATION               */
 /* _____________________________________ */
 
 nav {
-	margin: 50px auto 20px auto;
+	margin: 4.80769231% auto 1.92307692% auto;   /* 50px/1040px auto 20px/1040px auto */
 	text-align: center;
 	font-weight: bold;
 	font-size: 120%;
@@ -50,7 +51,7 @@ nav + ul {
 	
 nav li {
 	display: inline-block;
-	margin: 0 90px 0 0;
+	margin-right: 8.65384615%; /* 90px/1040px */
 	}
 	
 nav li:last-child {
@@ -58,16 +59,21 @@ nav li:last-child {
 	}
 
 
+
 /* _____________________________________ */
 /*           HEADINGS & TEXT             */
 /* _____________________________________ */
 
+#about {
+	margin: 0 4.16666667% 2.08333333% 0;  /* 0 40px/960px 20px/960px 0 */
+	}
+
 h1 {
 	text-align: center;
 	font-family: 'Oleo Script', cursive;
-	font-size: 6em;
+	font-size: 600%;
 	margin-top: 0;
-	padding-top: 60px;
+	padding-top: 5.76923077%;  /* 60px/1040px */
 	color: #22313F;
 	text-shadow: 2px 2px #fff;
 	}
@@ -80,7 +86,7 @@ h2 {
 h3 {
 	margin-bottom: 0;
 	background: url("../images/cheese-icon.png") no-repeat center left;
-	padding: 0 0 0 35px;
+	padding-left: 7.60869565%; /* 35px/460px */
 	color: #333;
 	}
 
@@ -91,19 +97,27 @@ h3 + p {
 	
 div[class="imagePlaceholder"] > p {
 	text-align: center;
-	font-size: 0.8em;
-	line-height: 1.2em;
-	margin: 0 0 20px 0;
+	font-size: 80%;
+	line-height: 120%;
+	margin-bottom: 8.88888889%; /* 20px/225px */
 	}
 	
 span:first-child {
 	font-weight: bold;
 	}
 	
-#production {
+#production, #gallery {
 	clear: both;
 	}
 	
+footer {
+	font-size: 70%;
+	line-height: 120%;
+	text-align: center;
+	margin: 2%;
+	}
+
+
 	
 /* _____________________________________ */
 /*                 LINKS                 */
@@ -132,11 +146,12 @@ a:active {
 
 img {
 	max-width: 100%;
+	border: 2px solid #fff;
 	}
 	
 .imagePlaceholder {
-	width: 225px;
-	margin: 0 20px 0 0;
+	width: 23.4375%; /* 225px/960px */
+	margin-right: 1.92307692%; /* 20px/1040px */
 	float: left
 	}
 	
@@ -149,12 +164,52 @@ img {
 	}
 
 #headerImage {
-	width: 960px;
+	width: 100%;  /* 960px/960px */
 	margin: 0 auto;
 	}
 	
-img {
-	border: 2px solid #fff;
+#headerImage img{
+	border: 6px solid #595241;
+	}
+	
+	
+	
+/* _____________________________________ */
+/*                TABLE                  */
+/* _____________________________________ */	
+	
+#production-table {
+	border-collapse: collapse;
+	border: 2px solid #333;
+	width: 60%;
+	background: #ecf0f1;
+	vertical-align: center;
+	text-align: center;
+	}
+	
+tr {
+	height: 2.2em;
+	}
+	
+tr:nth-child(2n) {
+	background: #95a5a6;
+	}
+	
+tr:nth-child(1) {
+	background: #2c3e50;
+	color: #fff;
+	}
+	
+tr:hover {
+	background: #F7CA18;
+	color: #F64747;
+	font-weight: bold;
+	border: 1px solid #4183D7;
+	}
+	
+th {
+	width: 50%;
+	border-right: 1px dotted #fff;
 	}
 
 
@@ -165,18 +220,39 @@ img {
 
 /* Smartphones (portrait) */
 @media only screen and (max-width : 320px) {
-	/* Styles */
+	
+	#container {
+	width: 100%
+	margin: 0 auto;
+	background: #FFE271;
+	padding-bottom: 3.125%; /* 10px/320px */
+	}
+	
 	}
 
 /* Smartphones (landscape) */
 @media only screen and (max-device-width : 480px) {
-	/* Styles */
+	
+	#container {
+	width: 100%
+	margin: 0 auto;
+	background: #FFE271;
+	padding-bottom: 2.08333333%; /* 10px/480px */
+	}
+	
 	}
 
 /* Tablets (portrait) */
 @media only screen and (min-device-width : 768px) 
 	and (max-device-width : 1024px) and (orientation : portrait) {
-	/* Styles */
+	
+	#container {
+	width: 100%
+	margin: 0 auto;
+	background: #FFE271;
+	padding-bottom: 1.30208333%; /* 10px/768px */
+	}
+	
 	}
 	
 @-ms-viewport{
