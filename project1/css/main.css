@@ -177,19 +177,28 @@ img {
 /* _____________________________________ */
 /*                TABLE                  */
 /* _____________________________________ */	
-	
+
 #production-table {
+	width: 100px;
+	}
+
+table {
+/* 	margin: auto; */
 	border-collapse: collapse;
 	border: 2px solid #333;
-	width: 60%;
+/* 	width: 200px; */
 	background: #ecf0f1;
+/* 
 	vertical-align: center;
 	text-align: center;
+ */
 	}
 	
+/* 
 tr {
 	height: 2.2em;
 	}
+ */
 	
 tr:nth-child(2n) {
 	background: #95a5a6;
@@ -208,7 +217,7 @@ tr:hover {
 	}
 	
 th {
-	width: 50%;
+	/* width: 50%; */
 	border-right: 1px dotted #fff;
 	}
 
@@ -218,9 +227,11 @@ th {
 /*             MEDIA QUERIES             */
 /* _____________________________________ */
 
+/* 
 @-ms-viewport{
 	width: device-width;
 	}
+ */
 
 /* Smartphones (portrait) */
 @media only screen 
@@ -288,6 +299,10 @@ th {
 		
 	h1 {
 		font-size: 500%;
+		}
+		
+	nav li {
+		margin-right: 8.65384615%; /* 90px/1040px */
 		}
 	
 	}
