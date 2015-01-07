@@ -227,10 +227,15 @@ th {
 	and (max-device-width: 320px) 
 	and (max-device-height: 480px) 
 	and (orientation: portrait) {
+	
+	body {
+		background: blue;
+		}
 
 	#container {
 	width: 100%
 	padding-bottom: 3.125%; /* 10px/320px */
+	background: pink;
 	}
 	
 	}
@@ -241,9 +246,14 @@ th {
 	and (max-device-height: 480px) 
 	and (orientation: landscape) {
 
+	body {
+		background: blue;
+		}
+
 	#container {
 	width: 100%
 	padding-bottom: 2.08333333%; /* 10px/480px */
+	background: pink;
 	}
 	
 	}
@@ -253,10 +263,15 @@ th {
 	and (max-device-width: 768px)
 	and (max-device-height: 1024px)
 	and (orientation: portrait) {
+	
+	body {
+		background: blue;
+		}
 
 	#container {
 	width: 100%
 	padding-bottom: 1.30208333%; /* 10px/768px */
+	background: pink;
 	}
 	
 	}
