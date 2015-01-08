@@ -295,5 +295,17 @@ th {
 	nav li {
 		margin-right: 8.65384615%; /* 90px/1040px */
 		}
+		
+	.imagePlaceholder {
+		width: 48.95833333%; /* 470px/960px */
+		}
+		
+	.imagePlaceholder:nth-child(2n + 1) {
+		margin: 0;
+		}
+
+	.imagePlaceholder:nth-child(2n + 2) {
+		clear: both;
+		}
 	
 	}
