@@ -242,15 +242,15 @@ th {
 		}
 	
 	#production-table {
-		width: 110%;
+		width: 130%;
 		}
 		
 	h1 {
-		font-size: 50%;
+		font-size: 25%;
 		}
 		
 	h3 {
-		padding-left: 14.0625%;  /* 45px/320px */
+		padding-left: 17.1875%;  /* 55px/320px */
 		}
 		
 	.imagePlaceholder {
@@ -273,14 +273,9 @@ th {
 	and (max-device-height: 480px) 
 	and (orientation: landscape) {
 
-	body {
-		background: blue;
-		}
-
 	#container {
 		width: 100%;
 		padding-bottom: 2.08333333%; /* 10px/480px */
-		background: pink;
 		}
 		
 	#production-table {
@@ -288,11 +283,11 @@ th {
 		}
 		
 	h1 {
-		font-size: 200%;
+		font-size: 400%;
 		}
 		
 	.imagePlaceholder {
-		width: 17.70833333%; /* 85px/480px */
+		width: 19.79166667%; /* 95px/480px */
 		margin-right: 4.16666667%; /* 20px/480px */
 		}
 		
@@ -306,6 +301,10 @@ th {
 		
 	nav li {
 		display: block;
+		}
+		
+	#headerImage img{
+		border: none;
 		}
 	
 	}
