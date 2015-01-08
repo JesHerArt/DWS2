@@ -271,8 +271,8 @@ th {
 
 /* Tablets (portrait) */
 @media only screen
-	and (max-device-width: 800px)
-	and (max-device-height: 1300px)
+	and (max-device-width: 768px)
+	and (max-device-height: 1024px)
 	and (orientation: portrait) {
 
 	#container {
