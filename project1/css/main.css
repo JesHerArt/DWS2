@@ -44,11 +44,6 @@ nav + ul {
 	list-style-type: none;
 	}
 	
-nav li {
-	display: inline-block;
-	margin-right: 8.65384615%; /* 90px/1040px */
-	}
-	
 nav li:last-child {
 	margin: 0;
 	}
@@ -215,6 +210,11 @@ th {
 @media only screen 
 	and (min-width : 1224px) {
 	
+	nav li {
+		display: inline-block;
+		margin-right: 8.65384615%; /* 90px/1040px */
+		}
+	
 	#about, #types {
 		width: 47.91666667%;   /* 460px / 960px */
 		float: left;
@@ -240,16 +240,22 @@ th {
 		width: 100%;
 		padding-bottom: 3.125%; /* 10px/320px */
 		}
-		
-/* 
-	#about, #types {
-		width: 100%; 
-		float: left;
-		}
- */
 	
 	#production-table {
 		width: 100%;
+		}
+		
+	h1 {
+		font-size: 300%;
+		}
+		
+	h3 {
+		padding-left: 10.9375%;  /* 35px/320px */
+		}
+		
+	.imagePlaceholder {
+		width: 68.75%; /* 220px/320px */
+		margin: 3.125%;  /* 10px/320px */
 		}
 	
 	}
@@ -310,5 +316,6 @@ th {
 		
 	h3 {
 		padding-left: 10.1744156%;  /* 35px/344px */
-	
-	}
+		}
+		
+	}	
