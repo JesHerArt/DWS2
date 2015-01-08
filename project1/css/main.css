@@ -205,6 +205,7 @@ th {
 	width: device-width;
 	}
  */
+
  
  /* Desktops and laptops */
 @media only screen 
@@ -320,11 +321,6 @@ th {
 	#container {
 		width: 100%;
 		padding-bottom: 1.30208333%; /* 10px/768px */
-		}
-		
-	#about, #types {
-		width: 47.91666667%;   /* 460px / 960px */
-		float: left;
 		}
 	
 	#production-table {
