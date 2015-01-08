@@ -328,6 +328,16 @@ th {
 		width: 100%;
 		padding-bottom: 1.30208333%; /* 10px/768px */
 		}
+		
+	#about, #types {
+		width: 47.91666667%;   /* 460px / 960px */
+		float: left;
+		}
+		
+	nav li {
+		display: inline-block;
+		margin-right: 8.65384615%; /* 90px/1040px */
+		}
 	
 	#production-table {
 		width: 80%;
