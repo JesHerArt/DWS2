@@ -27,11 +27,6 @@ body {
 	padding: 2.08333333% 3.8461585%; /* 20px/960px   40px/1040px */
 	}
 	
-#about, #types {
-	width: 47.91666667%;   /* 460px / 960px */
-	float: left;
-	}
-	
 
 	
 /* _____________________________________ */
@@ -146,7 +141,7 @@ a:active {
 
 img {
 	max-width: 100%;
-	border: 2px solid #fff;
+	border: 0.125em solid #fff;
 	}
 	
 .imagePlaceholder {
@@ -161,7 +156,7 @@ img {
 	}
 	
 #headerImage img{
-	border: 6px solid #595241;
+	border: 0.375em solid #595241;
 	}
 	
 	
@@ -219,6 +214,11 @@ th {
  /* Desktops and laptops */
 @media only screen 
 	and (min-width : 1224px) {
+	
+	#about, #types {
+		width: 47.91666667%;   /* 460px / 960px */
+		float: left;
+		}
 
 	.imagePlaceholder:nth-child(4n + 1) {
 		margin: 0;
@@ -240,6 +240,13 @@ th {
 		width: 100%;
 		padding-bottom: 3.125%; /* 10px/320px */
 		}
+		
+/* 
+	#about, #types {
+		width: 100%; 
+		float: left;
+		}
+ */
 	
 	#production-table {
 		width: 100%;
