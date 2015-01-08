@@ -246,16 +246,20 @@ th {
 		}
 		
 	h1 {
-		font-size: 300%;
+		font-size: 100%;
 		}
 		
 	h3 {
-		padding-left: 10.9375%;  /* 35px/320px */
+		padding-left: 12.5%;  /* 40px/320px */
 		}
 		
 	.imagePlaceholder {
-		width: 68.75%; /* 220px/320px */
-		margin: 3.125%;  /* 10px/320px */
+		width: 100%; /* 220px/320px */
+		/*margin: 3.125%;   10px/320px */
+		}
+		
+	nav li {
+		display: block;
 		}
 	
 	}
@@ -278,6 +282,23 @@ th {
 		
 	#production-table {
 		width: 100%;
+		}
+		
+	h1 {
+		font-size: 100%;
+		}
+		
+	.imagePlaceholder {
+		width: 17.70833333%; /* 85px/480px */
+		margin-right: 4.16666667%; /* 20px/480px */
+		}
+		
+	.imagePlaceholder:nth-child(4n + 1) {
+		margin: 0;
+		}
+
+	.imagePlaceholder:nth-child(4n + 2) {
+		clear: both;
 		}
 	
 	}
