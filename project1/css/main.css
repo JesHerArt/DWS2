@@ -154,14 +154,6 @@ img {
 	margin-right: 1.92307692%; /* 20px/1040px */
 	float: left
 	}
-	
-.imagePlaceholder:nth-child(4n + 1) {
-	margin: 0;
-	}
-
-.imagePlaceholder:nth-child(4n + 2) {
-	clear: both;
-	}
 
 #headerImage {
 	width: 100%;  /* 960px/960px */
@@ -223,21 +215,31 @@ th {
 	width: device-width;
 	}
  */
+ 
+ /* Desktops and laptops */
+@media only screen 
+	and (min-width : 1224px) {
+
+		
+	.imagePlaceholder:nth-child(4n + 1) {
+		margin: 0;
+		}
+
+	.imagePlaceholder:nth-child(4n + 2) {
+		clear: both;
+		}
+
+	}
 
 /* Smartphones (portrait) */
 @media only screen 
 	and (max-device-width: 320px) 
 	and (max-device-height: 480px) 
 	and (orientation: portrait) {
-	
-	body {
-		background: blue;
-		}
 
 	#container {
 		width: 100%;
 		padding-bottom: 3.125%; /* 10px/320px */
-		background: pink;
 		}
 	
 	#production-table {
