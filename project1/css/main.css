@@ -239,6 +239,7 @@ th {
 	#container {
 		width: 100%;
 		padding-bottom: 3.125%; /* 10px/320px */
+		background: green;
 		}
 	
 	#production-table {
