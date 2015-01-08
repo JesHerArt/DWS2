@@ -235,19 +235,25 @@ th {
 	and (max-device-width: 320px) 
 	and (max-device-height: 480px) 
 	and (orientation: portrait) {
+	
+	h1 {
+		color: blue;
+		font-size: 10%;
+		}
 
 	#container {
 		width: 100%;
 		padding-bottom: 3.125%; /* 10px/320px */
-		background: red;
-		}
-	
-	#production-table {
-		width: 100%;
+		background: blue;
 		}
 		
-	h1 {
-		font-size: 1%;
+			
+	nav li {
+		display: block;
+		}
+		
+	#headerImage img{
+		border: none;
 		}
 		
 	h3 {
@@ -258,14 +264,10 @@ th {
 		width: 100%;
 		}
 		
-	nav li {
-		display: block;
+	#production-table {
+		width: 100%;
 		}
-		
-	#headerImage img{
-		border: none;
-		}
-	
+
 	}
 
 /* Smartphones (landscape) */
