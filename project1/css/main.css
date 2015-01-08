@@ -233,10 +233,10 @@ th {
 	
 	
 	
-	/* Tablets (portrait) */
+	/* Tablets (portrait) Mainly iPad */
 @media only screen
-	and (max-device-width: 800px)
-	and (max-device-height: 1300px)
+	and (max-device-width: 768px)
+	and (max-device-height: 1024px)
 	and (orientation: portrait) {
 
 	#container {
@@ -283,7 +283,7 @@ th {
 	
 
 
-/* Smartphones (landscape) */
+/* Smartphones (landscape) Mainly iPhone 4 */
 @media only screen
 	and (max-device-width: 320px)
 	and (max-device-height: 480px) 
@@ -327,7 +327,7 @@ th {
 
 
 
-/* Smartphones (portrait) */
+/* Smartphones (portrait) Mainly iPhone 4 */
 @media only screen 
 	and (max-device-width: 320px) 
 	and (max-device-height: 480px) 
