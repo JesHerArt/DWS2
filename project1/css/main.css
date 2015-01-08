@@ -242,15 +242,15 @@ th {
 		}
 	
 	#production-table {
-		width: 130%;
+		width: 100%;
 		}
 		
 	h1 {
-		font-size: 25%;
+		font-size: 12pt;
 		}
 		
 	h3 {
-		padding-left: 17.1875%;  /* 55px/320px */
+		padding-left: 18.75%;  /* 60px/320px */
 		}
 		
 	.imagePlaceholder {
@@ -287,8 +287,8 @@ th {
 		}
 		
 	.imagePlaceholder {
-		width: 19.79166667%; /* 95px/480px */
-		margin-right: 4.16666667%; /* 20px/480px */
+		width: 20.83333333%; /* 100px/480px */
+		margin-right: 3.125%; /* 15px/480px */
 		}
 		
 	.imagePlaceholder:nth-child(4n + 1) {
