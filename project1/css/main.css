@@ -245,7 +245,7 @@ th {
 		}
 		
 	#about, #types {
-		width: 47.91666667%;   /* 460px / 960px */
+		width: 43.48958333%; /* 334px / 768px */ 
 		float: left;
 		}
 		
@@ -334,14 +334,17 @@ th {
 	and (orientation: portrait) {
 	
 	h1 {
-		color: green;
-		font-size: 800%;
+		font-size: 100%;
 		}
 
 	#container {
 		width: 100%;
 		padding-bottom: 3.125%; /* 10px/320px */
-		background: white;
+		}
+		
+	#about, #types {
+		width: 100%;
+		float: none;
 		}
 			
 	nav li {
