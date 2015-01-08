@@ -238,15 +238,14 @@ th {
 	
 	h1 {
 		color: blue;
-		font-size: 10%;
+		font-size: 800%;
 		}
 
 	#container {
 		width: 100%;
 		padding-bottom: 3.125%; /* 10px/320px */
-		background: blue;
+		background: maroon;
 		}
-		
 			
 	nav li {
 		display: block;
@@ -321,6 +320,11 @@ th {
 	#container {
 		width: 100%;
 		padding-bottom: 1.30208333%; /* 10px/768px */
+		}
+		
+	#about, #types {
+		width: 47.91666667%;   /* 460px / 960px */
+		float: left;
 		}
 	
 	#production-table {
