@@ -284,14 +284,14 @@ th {
 	and (orientation: portrait) {
 	
 	h1 {
-		color: blue;
+		color: green;
 		font-size: 800%;
 		}
 
 	#container {
 		width: 100%;
 		padding-bottom: 3.125%; /* 10px/320px */
-		background: maroon;
+		background: white;
 		}
 			
 	nav li {
