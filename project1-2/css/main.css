@@ -1,0 +1,33 @@
+.container {
+	background: #eee;
+	}
+
+#heading, #footer {
+	text-align: center;
+	padding: 20px 0;
+	background: pink;
+	margin: 0;
+	}
+	
+#navBar {
+	text-align: center;
+	background: white;
+	}
+	
+.navButton {
+	width: 75%;
+	}
+	
+#mainContent {
+	padding: 0 20px;
+	background: yellow;
+	}
+	
+#slogan {
+	text-align: center;
+	font-style: italic;
+	}
+	
+#headerImage {
+	margin-bottom: 20px;
+	}
