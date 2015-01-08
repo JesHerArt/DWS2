@@ -285,8 +285,8 @@ th {
 
 /* Smartphones (landscape) Mainly iPhone 4 */
 @media only screen
-	and (max-device-width: 320px)
-	and (max-device-height: 480px) 
+	and (max-device-width: 414px)
+	and (min-device-width: 320px) 
 	and (orientation: landscape) {
 
 	#container {
