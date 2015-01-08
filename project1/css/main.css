@@ -237,10 +237,7 @@ th {
 @media only screen
 	and (max-device-width: 768px)
 	and (max-device-height: 1024px)
-	and (orientation: portrait)
-	, only screen
-	and (max-device-width: 768px)
-	and (orientation: landscape) {
+	and (orientation: portrait) {
 
 	#container {
 		width: 100%;
