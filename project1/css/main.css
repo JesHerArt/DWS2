@@ -207,7 +207,7 @@ th {
  
  /* Desktops and laptops */
 @media only screen 
-	and (min-width : 1224px) {
+	and (min-width : 769px) {
 	
 	/* ----------- MAIN STYLE ------------ */
 	#about, #types {
@@ -235,13 +235,9 @@ th {
 	
 	/* Tablets (portrait) Mainly iPad */
 @media only screen
-	and (max-device-width: 800px)
+	and (max-device-width: 768px)
 	and (max-device-height: 1024px)
-	and (orientation: portrait)/* 
-,
-	only screen
-	and (max-width: 1223px)
- */ {
+	and (orientation: portrait) {
 
 	/* ----------- MAIN STYLE ------------ */
 	#container {
