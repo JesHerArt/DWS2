@@ -246,7 +246,6 @@ th {
 	#container {
 		width: 100%;
 		padding-bottom: 1.30208333%; /* 10px/768px */
-		background: green;
 		}
 		
 	#about, #types {
@@ -304,7 +303,6 @@ th {
 	#container {
 		width: 100%;
 		padding-bottom: 2.08333333%; /* 10px/480px */
-		background: red;
 		}
 	
 	/* ----------- NAVIGATION ------------- */
@@ -358,7 +356,6 @@ th {
 	#container {
 		width: 100%;
 		padding-bottom: 3.125%; /* 10px/320px */
-		background: pink;
 		}
 		
 	#about, #types {
