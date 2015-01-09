@@ -289,10 +289,10 @@ th {
 
 /* Smartphones (landscape) Mainly iPhone 4 - 6 */
 @media only screen
-	and (min-device-width: 401px) 
+	and (min-device-width: 321px) 
 	and (max-device-width: 767px)
 	and (orientation: landscape), 
-	(min-width : 401px) 
+	(min-width : 321px) 
 	and (max-width : 767px)
 	/* 
 ,
@@ -346,7 +346,7 @@ th {
 
 /* Smartphones (portrait) Mainly iPhone 4 - 6 */
 @media only screen 
-	and (min-device-width: 320px) and (max-device-width : 400px), (min-width : 320px) and (max-width : 400px)
+	/* and (min-device-width: 320px) */ and (max-device-width : 320px), /* (min-width : 320px) and  */(max-width : 320px)
 /* 	and (min-device-width: 320px)  */
 	and (orientation: portrait)/* 
 ,
