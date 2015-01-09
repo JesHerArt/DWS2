@@ -237,9 +237,11 @@ th {
 @media only screen
 	and (max-device-width: 800px)
 	and (max-device-height: 1024px)
-	and (orientation: portrait),
+	and (orientation: portrait)/* 
+,
 	only screen
-	and (max-width: 1223px) {
+	and (max-width: 1223px)
+ */ {
 
 	/* ----------- MAIN STYLE ------------ */
 	#container {
