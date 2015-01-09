@@ -204,22 +204,18 @@ th {
 /*             MEDIA QUERIES             */
 /* _____________________________________ */
 
-/* 
-@-ms-viewport{
-	width: device-width;
-	}
- */
-
  
  /* Desktops and laptops */
 @media only screen 
 	and (min-width : 1224px) {
 	
+	/* ----------- MAIN STYLE ------------ */
 	#about, #types {
 		width: 47.91666667%;   /* 460px / 960px */
 		float: left;
 		}
 
+	/* ----------- IMAGES ---------------- */
 	.imagePlaceholder:nth-child(4n + 1) {
 		margin: 0;
 		}
@@ -228,6 +224,7 @@ th {
 		clear: both;
 		}
 		
+	/* ----------- NAVIGATION ------------- */
 	nav li {
 		margin-right: 8.65384615%; /* 90px/1040px */
 		}
@@ -244,6 +241,7 @@ th {
 	only screen
 	and (max-width: 1223px) {
 
+	/* ----------- MAIN STYLE ------------ */
 	#container {
 		width: 100%;
 		padding-bottom: 1.30208333%; /* 10px/768px */
@@ -254,18 +252,26 @@ th {
 		float: left;
 		}
 		
+	/* ----------- NAVIGATION ------------- */
 	nav li {
 		margin-right: 3.90625%; /* 30px/768px */
 		}
 	
+	/* -------------- TABLE ---------------- */
 	#production-table {
 		width: 80%;
 		}
 		
+	/* ----------- HEADINGS ------------- */
 	h1 {
 		font-size: 500%;
 		}
 		
+	h3 {
+		padding-left: 10.1744156%;  /* 35px/344px */
+		}
+	
+	/* ----------- IMAGES ---------------- */
 	.imagePlaceholder {
 		width: 47.39583333%; /* 364px/768px */
 		margin: 1.30208333%;  /* 10px/768px */
@@ -273,10 +279,6 @@ th {
 
 	.imagePlaceholder:nth-child(2n + 2) {
 		clear: both;
-		}
-		
-	h3 {
-		padding-left: 10.1744156%;  /* 35px/344px */
 		}
 		
 	}	
@@ -291,19 +293,28 @@ th {
 	only screen
 	and (max-width: 800px) {
 
+	/* ----------- MAIN STYLE ------------ */
 	#container {
 		width: 100%;
 		padding-bottom: 2.08333333%; /* 10px/480px */
 		}
+	
+	/* ----------- NAVIGATION ------------- */
+	nav li {
+		display: block;
+		}
 		
+	/* -------------- TABLE ---------------- */	
 	#production-table {
 		width: 100%;
 		}
-		
+	
+	/* ----------- HEADINGS ------------- */
 	h1 {
 		font-size: 400%;
 		}
-		
+	
+	/* ----------- IMAGES ---------------- */
 	.imagePlaceholder {
 		width: 21.875%; /* 105px/480px */
 		margin-right: 3.125%; /* 15px/480px */
@@ -315,10 +326,6 @@ th {
 
 	.imagePlaceholder:nth-child(4n + 2) {
 		clear: both;
-		}
-		
-	nav li {
-		display: block;
 		}
 		
 	#headerImage img{
@@ -337,10 +344,7 @@ th {
 	only screen  
 	and (max-width: 600px) {
 	
-	h1 {
-		font-size: 300%;
-		}
-
+	/* ----------- MAIN STYLE ------------ */
 	#container {
 		width: 100%;
 		padding-bottom: 3.125%; /* 10px/320px */
@@ -350,24 +354,23 @@ th {
 		width: 100%;
 		float: none;
 		}
-			
+		
+	/* ----------- NAVIGATION ------------- */		
 	nav li {
 		display: block;
 		}
 		
-	#headerImage img{
-		border: none;
+	/* ----------- HEADINGS ------------- */
+	h1 {
+		font-size: 300%;
 		}
 		
 	h3 {
 		padding-left: 15.625%;  /* 50px/320px */
 		}
-		
+	
+	/* ----------- IMAGES ---------------- */
 	.imagePlaceholder {
-		width: 100%;
-		}
-		
-	#production-table {
 		width: 100%;
 		}
 
