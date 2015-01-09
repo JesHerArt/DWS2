@@ -207,8 +207,9 @@ th {
  
  /* Desktops and laptops */
 @media only screen 
-	and (min-width : 769px) {
+	and (min-width : 1224px) {
 	
+
 	/* ----------- MAIN STYLE ------------ */
 	#about, #types {
 		width: 47.91666667%;   /* 460px / 960px */
@@ -232,12 +233,14 @@ th {
 	}
 	
 	
+
 	
 	/* Tablets (portrait) Mainly iPad */
 @media only screen
-	and (max-device-width: 768px)
-	and (max-device-height: 1024px)
-	and (orientation: portrait) {
+	and (min-device-width: 768px) and (max-device-width: 1223px)
+/* 	and (max-device-height: 1024px) */
+	and (orientation: portrait),
+	 (min-width : 768px) and 	 (max-width : 1223px) {
 
 	/* ----------- MAIN STYLE ------------ */
 	#container {
@@ -285,11 +288,13 @@ th {
 
 /* Smartphones (landscape) Mainly iPhone 4 - 6 */
 @media only screen
-	and (max-device-width: 550px)
-	and (min-device-width: 320px) 
-	and (orientation: landscape),
+	and (min-device-width: 480px) and (max-device-width: 767px)
+/* 	and (min-device-width: 320px)  */
+	and (orientation: landscape), (min-width : 480px) and (max-width : 767px)/* 
+,
 	only screen
-	and (max-width: 800px) {
+	and (max-width: 800px)
+ */ {
 
 	/* ----------- MAIN STYLE ------------ */
 	#container {
@@ -336,11 +341,13 @@ th {
 
 /* Smartphones (portrait) Mainly iPhone 4 - 6 */
 @media only screen 
-	and (max-device-width: 414px) 
-	and (min-device-width: 320px) 
-	and (orientation: portrait),
+	and (min-device-width: 320px) and (max-device-width : 479px), (min-width : 320px) and (max-width : 479px)
+/* 	and (min-device-width: 320px)  */
+	and (orientation: portrait)/* 
+,
 	only screen  
-	and (max-width: 400px) {
+	and (max-width: 400px)
+ */ {
 	
 	/* ----------- MAIN STYLE ------------ */
 	#container {
@@ -358,6 +365,11 @@ th {
 		display: block;
 		}
 		
+	/* -------------- TABLE ---------------- */	
+	#production-table {
+		width: 100%;
+		}
+		
 	/* ----------- HEADINGS ------------- */
 	h1 {
 		font-size: 300%;
@@ -370,6 +382,10 @@ th {
 	/* ----------- IMAGES ---------------- */
 	.imagePlaceholder {
 		width: 100%;
+		}
+		
+	#headerImage img{
+		border: none;
 		}
 
 	}
