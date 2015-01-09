@@ -340,7 +340,7 @@ th {
 	and (min-device-width: 320px) 
 	and (orientation: portrait),
 	only screen  
-	and (max-width: 600px) {
+	and (max-width: 400px) {
 	
 	/* ----------- MAIN STYLE ------------ */
 	#container {
