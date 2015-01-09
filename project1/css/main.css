@@ -44,6 +44,10 @@ nav + ul {
 	list-style-type: none;
 	}
 	
+nav li {
+	display: inline-block;
+	}
+	
 nav li:last-child {
 	margin: 0;
 	}
@@ -211,11 +215,6 @@ th {
 @media only screen 
 	and (min-width : 1224px) {
 	
-	nav li {
-		display: inline-block;
-		margin-right: 8.65384615%; /* 90px/1040px */
-		}
-	
 	#about, #types {
 		width: 47.91666667%;   /* 460px / 960px */
 		float: left;
@@ -228,6 +227,10 @@ th {
 	.imagePlaceholder:nth-child(4n + 2) {
 		clear: both;
 		}
+		
+	nav li {
+		margin-right: 8.65384615%; /* 90px/1040px */
+		}
 
 	}
 	
@@ -237,7 +240,9 @@ th {
 @media only screen
 	and (max-device-width: 768px)
 	and (max-device-height: 1024px)
-	and (orientation: portrait) {
+	and (orientation: portrait),
+	only screen
+	and (max-width: 1223px) {
 
 	#container {
 		width: 100%;
@@ -250,8 +255,7 @@ th {
 		}
 		
 	nav li {
-		display: inline-block;
-		margin-right: 8.65384615%; /* 90px/1040px */
+		margin-right: 3.90625%; /* 30px/768px */
 		}
 	
 	#production-table {
@@ -260,10 +264,6 @@ th {
 		
 	h1 {
 		font-size: 500%;
-		}
-		
-	nav li {
-		margin-right: 3.90625%; /* 30px/768px */
 		}
 		
 	.imagePlaceholder {
@@ -287,7 +287,9 @@ th {
 @media only screen
 	and (max-device-width: 414px)
 	and (min-device-width: 320px) 
-	and (orientation: landscape) {
+	and (orientation: landscape),
+	only screen
+	and (max-width: 800px) {
 
 	#container {
 		width: 100%;
@@ -331,7 +333,9 @@ th {
 @media only screen 
 	and (max-device-width: 414px) 
 	and (min-device-width: 320px) 
-	and (orientation: portrait) {
+	and (orientation: portrait),
+	only screen  
+	and (max-width: 600px) {
 	
 	h1 {
 		font-size: 300%;

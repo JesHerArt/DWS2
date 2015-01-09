@@ -1,14 +1,16 @@
+/* 
+		Jessica J. Hernandez
+		Week 1 - Site 2
+		DWS-2 201501-01
+		January 07, 2015
+ */
+
+/* _____________________________________ */
+/*              MAIN STYLES              */
+/* _____________________________________ */
 .container {
 	background: rgba(214,249,255,1);
 	}
-
-#heading {
-	text-align: center;
-	padding: 20px 0;
-	margin: 0;
-	color: rgba(32,124,229,1);
-	}
-	
 	
 #footer {
 	background: rgb(73,155,234); /* Old browsers */
@@ -29,6 +31,17 @@ footer {
 	padding: 15px 0;
 	}
 	
+#mainContent {
+	padding: 0 20px;
+	border-left: 1px dotted rgba(32,124,229,1);
+	}
+
+	
+	
+/* _____________________________________ */
+/*              NAVIGATION               */
+/* _____________________________________ */
+	
 #navBar {
 	text-align: center;
 	}
@@ -37,30 +50,23 @@ footer {
 	width: 75%;
 	}
 	
-#mainContent {
-	padding: 0 20px;
-	border-left: 1px dotted rgba(32,124,229,1);
-	}
 	
-#slogan {
+	
+/* _____________________________________ */
+/*           HEADINGS & TEXT             */
+/* _____________________________________ */
+	
+#heading {
 	text-align: center;
-	font-style: italic;
-	}
-	
-#headerImage {
-	margin: 0 auto 20px auto;
-	border-top: 2px solid #F7CA18;
-	border-bottom: 2px solid #F7CA18;
+	padding: 20px 0;
+	margin: 0;
+	color: rgba(32,124,229,1);
 	}
 	
 h1 {
 	font-weight: bold;
 	letter-spacing: 2px;
 	text-transform: uppercase;
-	}
-	
-img {
-	max-width: 100%;
 	}
 	
 h2 {
@@ -75,6 +81,22 @@ h2, h3 {
 	color: #2C3E50;
 	}
 	
+	
+	
+/* _____________________________________ */
+/*                IMAGES                 */
+/* _____________________________________ */
+	
+img {
+	max-width: 100%;
+	}
+	
+#headerImage {
+	margin: 0 auto 20px auto;
+	border-top: 2px solid #F7CA18;
+	border-bottom: 2px solid #F7CA18;
+	}
+
 .gal {
 	text-align: center;
 	font-weight: bold;
