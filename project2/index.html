@@ -1,12 +1,11 @@
+<!DOCTYPE html>
+
 <!--
 		Jessica J. Hernandez
 		Week 2 - Site 1
 		DWS-2 201501-01
 		January 12, 2015
 -->
- 
-
-<!DOCTYPE html>
  
 <html lang="en">
 	<head>
@@ -35,7 +34,7 @@
 		<!-- Google Fonts -->
 		
 		<!-- Favicon -->
-		<link rel="icon" type="image/png" href="images/favicoooooooooooon.png">
+		<link rel="icon" type="image/png" href="images/favicon.png">
 		
 	</head>
 	
@@ -45,7 +44,7 @@
 	
 	
 			<!-- NAVIGATION BAR -->
-			<ul class="nav nav-pills nav-justified"">
+			<ul class="nav nav-pills nav-justified">
 				<li role="presentation" class="active"><a href="#">Home</a></li>
 				<li role="presentation"><a href="#">Profile</a></li>
 				<li role="presentation"><a href="#">Messages</a></li>
@@ -166,7 +165,7 @@
 			
 			
 			<!-- PANEL WITH SMALL STORY THUMBNAILS -->
-			<div class="panel panel-default">
+			<div class="panel panel-primary">
   				<div class="panel-heading">
     				<h3 class="panel-title">TOP STORIES</h3>
   				</div>
@@ -175,7 +174,7 @@
 					<div class="row">
   						<div class="col-md-4 col-sm-4 col-xs-12">
     						<div class="media">
-  								<a class="media-left" href="#"><img src="..." alt="..."></a>
+  								<a class="media-left" href="#"><img src="..." alt="..." class="img-responsive"></a>
   								<div class="media-body">
     								<h4 class="media-heading">Media heading</h4>
    				 					<p>Enter description of image here...</p>
@@ -185,7 +184,7 @@
 						
 						<div class="col-md-4 col-sm-4 col-xs-12">
     						<div class="media">
-  								<a class="media-left" href="#"><img src="..." alt="..."></a>
+  								<a class="media-left" href="#"><img src="..." alt="..." class="img-responsive"></a>
   								<div class="media-body">
     								<h4 class="media-heading">Media heading</h4>
    				 					<p>Enter description of image here...</p>
@@ -195,7 +194,7 @@
 						
 						<div class="col-md-4 col-sm-4 col-xs-12">
     						<div class="media">
-  								<a class="media-left" href="#"><img src="..." alt="..."></a>
+  								<a class="media-left" href="#"><img src="..." alt="..." class="img-responsive"></a>
   								<div class="media-body">
     								<h4 class="media-heading">Media heading</h4>
    				 					<p>Enter description of image here...</p>
@@ -208,16 +207,196 @@
 			</div>
 			<!-- END OF PANEL WITH SMALL STORY THUMBNAILS -->
 			
+			
+			<!-- PANEL WITH TRAVEL AGENT SEARCH FORM -->
+			<div class="panel panel-primary">
+  				<div class="panel-heading">
+    				<h3 class="panel-title">FIND A TRAVEL AGENT NEAR YOU</h3>
+  				</div>
+  				
+  				<div class="panel-body">
+
+					<form class="form-horizontal">
+						<fieldset>
+
+							<!-- Form Name -->
+							<legend>Travel Agent Search Form</legend>
+
+							<!-- Text input for Full Name -->
+							<div class="form-group">
+								<label class="col-md-4 control-label" for="fullName">Full Name</label>  
+								<div class="col-md-6">
+									<input id="fullName" name="fullName" type="text" placeholder="John Doe" class="form-control input-md" required="">
+							  	</div>
+							</div>
+
+							<!-- Text input for Phone Number -->
+							<div class="form-group">
+								<label class="col-md-4 control-label" for="phone">Phone Number</label>  
+								<div class="col-md-6">
+									<input id="phone" name="phone" type="text" placeholder="(000) 000-0000" class="form-control input-md" required="">
+								</div>
+							</div>
+
+							<!-- Text input for Email Address -->
+							<div class="form-group">
+							  	<label class="col-md-4 control-label" for="email">E-mail Address</label>  
+							  	<div class="col-md-6">
+							  		<input id="email" name="email" type="text" placeholder="your_email123@email.com" class="form-control input-md" required="">
+							  	</div>
+							</div>
+
+							<!-- Text input for City -->
+							<div class="form-group">
+							  	<label class="col-md-4 control-label" for="city">City</label>  
+							  	<div class="col-md-6">
+							  		<input id="city" name="city" type="text" placeholder="San Diego" class="form-control input-md" required="">
+							  	</div>
+							</div>
+
+							<!-- Select Basic for State -->
+							<div class="form-group">
+							  <label class="col-md-4 control-label" for="state">State</label>
+							  <div class="col-md-6">
+								<select id="state" name="state" class="form-control">
+								  <option value="Choose a State..">Choose a State..</option>
+								  <option value="Alabama">Alabama</option>
+								  <option value="Alaska">Alaska</option>
+								  <option value="Arizona">Arizona</option>
+								  <option value="Arkansas">Arkansas</option>
+								  <option value="California">California</option>
+								  <option value="Colorado">Colorado</option>
+								  <option value="Connecticut">Connecticut</option>
+								  <option value="Delaware">Delaware</option>
+								  <option value="Florida">Florida</option>
+								  <option value="Georgia">Georgia</option>
+								  <option value="Hawaii">Hawaii</option>
+								  <option value="Idaho">Idaho</option>
+								  <option value="Illinois Indiana">Illinois Indiana</option>
+								  <option value="Iowa">Iowa</option>
+								  <option value="Kansas">Kansas</option>
+								  <option value="Kentucky">Kentucky</option>
+								  <option value="Louisiana">Louisiana</option>
+								  <option value="Maine">Maine</option>
+								  <option value="Maryland">Maryland</option>
+								  <option value="Massachusetts">Massachusetts</option>
+								  <option value="Michigan">Michigan</option>
+								  <option value="Minnesota">Minnesota</option>
+								  <option value="Mississippi">Mississippi</option>
+								  <option value="Missouri">Missouri</option>
+								  <option value="Montana Nebraska">Montana Nebraska</option>
+								  <option value="Nevada">Nevada</option>
+								  <option value="New Hampshire">New Hampshire</option>
+								  <option value="New Jersey">New Jersey</option>
+								  <option value="New Mexico">New Mexico</option>
+								  <option value="New York">New York</option>
+								  <option value="North Carolina">North Carolina</option>
+								  <option value="North Dakota">North Dakota</option>
+								  <option value="Ohio">Ohio</option>
+								  <option value="Oklahoma">Oklahoma</option>
+								  <option value="Oregon">Oregon</option>
+								  <option value="Pennsylvania Rhode Island">Pennsylvania Rhode Island</option>
+								  <option value="South Carolina">South Carolina</option>
+								  <option value="South Dakota">South Dakota</option>
+								  <option value="Tennessee">Tennessee</option>
+								  <option value="Texas">Texas</option>
+								  <option value="Utah">Utah</option>
+								  <option value="Vermont">Vermont</option>
+								  <option value="Virginia">Virginia</option>
+								  <option value="Washington">Washington</option>
+								  <option value="West Virginia">West Virginia</option>
+								  <option value="Wisconsin">Wisconsin</option>
+								  <option value="Wyoming">Wyoming</option>
+								</select>
+							  </div>
+							</div>
+
+							<!-- Text input-->
+							<div class="form-group">
+							  	<label class="col-md-4 control-label" for="zipCode">Zip Code</label>  
+							  	<div class="col-md-6">
+							  	<input id="zipCode" name="zipCode" type="text" placeholder="33950" class="form-control input-md" required="">
+							  	</div>
+							</div>
+
+							<!-- Multiple Radios (inline) -->
+							<div class="form-group">
+							  	<label class="col-md-4 control-label" for="contactMethod">Preferred Method of Contact</label>
+							  	<div class="col-md-4"> 
+									<label class="radio-inline" for="contactMethod-0"><input type="radio" name="contactMethod" id="contactMethod-0" value="Phone" checked="checked">Phone</label> 
+									
+									<label class="radio-inline" for="contactMethod-1"><input type="radio" name="contactMethod" id="contactMethod-1" value="E-mail">E-mail</label>
+							  	</div>
+							</div>
+
+							<!-- Button -->
+							<div class="form-group">
+							  	<label class="col-md-4 control-label" for="submitButton"></label>
+							  	<div class="col-md-4">
+									<button id="submitButton" name="submitButton" class="btn btn-info">Sumbit</button>
+									
+									<span class="glyphicon glyphicon-lock" aria-hidden="true"></span>
+							  	</div>
+							</div>
+
+					</fieldset>
+				</form>
+
+				<div class="alert alert-warning searchAlert" role="alert">
+					<p>By filling out the travel agent search form, our team will find the nearest travel agency to you that arranges trips to Japan and offers special tourism packages. Your information will not be sold to any outside sources and is solely for the purpose of matching you with the correct travel agency. If you have any questions, please feel free to contact our customer service team at <a href="mailto:dummytext@dumymemail.com" class="alert-link">info@visitjapan.com</a></p>
+				</div>
+						
+				</div> <!-- end of .panel-body -->
+				
+  			</div>
+			</div>
+			<!-- END OF PANEL WITH TRAVEL AGENT SEARCH FORM -->
+			
+			
+			<!-- FOOTER -->
+			<footer>
+			
+				<hr>
+			
+				<table id="footTable">
+					<tr>
+						<td>
+							<!-- 
+<ul>
+								<li><a href="">Home</a></li>
+								<li><a href="">About</a></li>
+								<li><a href="">Travel Agents</a></li>
+								<li><a href="">Discounts</a></li>
+							</ul>
+ -->
+ 							<p><a href="">Home</a><br><a href="">About</a><br><a href="">Travel Agents</a><br><a href="">Discounts</a></p>
+						</td>
+						
+						<td>
+							<a href="http://www.w3.org/html/logo/"><img src="http://www.w3.org/html/logo/badge/html5-badge-h-css3.png" width="133" height="64" alt="HTML5 Powered with CSS3 / Styling" title="HTML5 Powered with CSS3 / Styling"></a>
+						</td>
+					</tr>
+				</table>
+				
+				<hr>
+				
+				<p id="copyR">&copy; 2015 Jessica J. Hernandez | DWS2 | Week Two, Project Two</p>
+			
+			</footer>
+			<!-- END OF FOOTER -->
+			
   			
 		</div> <!-- END OF CONTAINER-FLUID DIV -->
 	
+	
+	
+		<!-- SCRIPTS  -->
+    		<!-- jQuery -->
+    			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    		<!-- Bootstrap JS -->
+    			<script src="js/bootstrap.min.js"></script>	
+	
 	</body>
 	
-	<!-- SCRIPTS  -->
-	
-    <!-- jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <!-- Bootstrap JS -->
-    <script src="js/bootstrap.min.js"></script>
 	
 </html>

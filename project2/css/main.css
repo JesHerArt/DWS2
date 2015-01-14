@@ -1,3 +1,15 @@
+/* 
+		Jessica J. Hernandez
+		Week 2 - Site 1
+		DWS-2 201501-01
+		January 12, 2015
+ */
+
+
+/* _____________________________________ */
+/*              MAIN STYLES              */
+/* _____________________________________ */
+
 .container-fluid {
 	width: 100%;
 	}
@@ -6,17 +18,66 @@
 	margin-top: 30px;
 	}
 	
+#footTable {
+	width: 90%;
+	margin: 2% auto;
+	}
+	
+#copyR, #footTable {
+	text-align: center;
+	}
+	
+	
+	
+/* _____________________________________ */
+/*              NAVIGATION               */
+/* _____________________________________ */
+
+
+
+/* _____________________________________ */
+/*           HEADINGS & TEXT             */
+/* _____________________________________ */
+
+.searchAlert {
+			margin: 1% auto;
+			}
+
+
+
+/* _____________________________________ */
+/*                 LINKS                 */
+/* _____________________________________ */	
+
+
+
+/* _____________________________________ */
+/*                IMAGES                 */
+/* _____________________________________ */
+
 .carousel {
 	margin-bottom: 20px;
 	}
 
+
+
+/* _____________________________________ */
+/*                TABLE                  */
+/* _____________________________________ */	
+
+
+
+/* _____________________________________ */
+/*             MEDIA QUERIES             */
+/* _____________________________________ */
 
 /* Smartphones (portrait) Mainly iPhone 4 - 6 */
 @media only screen 
 	and (max-device-width: 414px)
 	and (orientation: portrait),
 	(max-width: 414px) {
-			
+	
+	/* ----------- MAIN STYLE ------------ */		
 		body {
 			background: PapayaWhip;
 			}
@@ -33,7 +94,7 @@
 	
 	
 	
-* Smartphones (landscape) Mainly iPhone 4 - 6 */
+/* Smartphones (landscape) Mainly iPhone 4 - 6 */
 @media only screen
 	and (min-device-width: 415px) 
 	and (max-device-width: 767px)
@@ -49,21 +110,11 @@
 			display: none;
 			}
 			
-		.img-responsive {
-			position: left;
-			}
-			
-		.caption {
-			float: left;
-			}
-			
 		.col-xs-12 {
 			margin-top: 4%;
 			}
 			
 	}
-	
-	
 	
 	
 	
@@ -87,14 +138,13 @@
 	
 	
 	
-	
  /* Desktops and laptops */
 @media only screen 
 	and (min-width : 900px) {
 	
 		.container-fluid {
 			width: 82%;
-			margin: 0 auto; 
+			margin: 2% auto; 
 			}
 		
 		body {
@@ -103,6 +153,10 @@
 			
 		.carousel-caption h3 {
 			font-size: 130%;
+			}
+			
+		.searchAlert {
+			width: 90%;
 			}
 		
 	}
