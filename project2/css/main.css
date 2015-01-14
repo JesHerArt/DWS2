@@ -1,3 +1,7 @@
+.container-fluid {
+	width: 100%;
+	}
+			
 .jumbotron {
 	margin-top: 30px;
 	}
@@ -12,17 +16,17 @@
 	and (max-device-width: 414px)
 	and (orientation: portrait),
 	(max-width: 414px) {
-	
-		.container-fluid {
-			width: 100%;
-			}
-		
+			
 		body {
 			background: PapayaWhip;
 			}
 		
 		.ghost {
 			display: none;
+			}
+			
+		.col-xs-12 {
+			margin-top: 4%;
 			}
 		
 	}
@@ -36,10 +40,6 @@
 	and (orientation: landscape), 
 	(min-width : 415px) 
 	and (max-width : 767px) {
-	
-		.container-fluid {
-			width: 100%;
-			}
 	
 		body {
 			background: Green;
@@ -57,6 +57,10 @@
 			float: left;
 			}
 			
+		.col-xs-12 {
+			margin-top: 4%;
+			}
+			
 	}
 	
 	
@@ -71,16 +75,12 @@
 	(min-width : 768px)
 	and (max-width : 899px) {
 	
-		.container-fluid {
-			width: 100%;
-			}
-	
 		body {
 			background: Crimson;
 			}
 			
-		.col-sm-12 {
-			margin-top: 4%;
+		.carousel-caption h3 {
+			font-size: 75%;
 			}
 	
 	}
@@ -99,6 +99,10 @@
 		
 		body {
 			background: SlateBlue;
+			}
+			
+		.carousel-caption h3 {
+			font-size: 130%;
 			}
 		
 	}
