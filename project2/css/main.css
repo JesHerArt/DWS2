@@ -15,15 +15,13 @@
 	}
 	
 body {
-	background: background: rgb(255,216,206); /* Old browsers */
-background: -moz-linear-gradient(top,  rgba(255,216,206,1) 0%, rgba(255,240,231,1) 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,216,206,1)), color-stop(100%,rgba(255,240,231,1))); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(top,  rgba(255,216,206,1) 0%,rgba(255,240,231,1) 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(top,  rgba(255,216,206,1) 0%,rgba(255,240,231,1) 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(top,  rgba(255,216,206,1) 0%,rgba(255,240,231,1) 100%); /* IE10+ */
-background: linear-gradient(to bottom,  rgba(255,216,206,1) 0%,rgba(255,240,231,1) 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffd8ce', endColorstr='#fff0e7',GradientType=0 ); /* IE6-9 */
-;
+	background: rgb(255,216,206); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(255,216,206,1) 0%, rgba(255,240,231,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,216,206,1)), color-stop(100%,rgba(255,240,231,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(255,216,206,1) 0%,rgba(255,240,231,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(255,216,206,1) 0%,rgba(255,240,231,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(255,216,206,1) 0%,rgba(255,240,231,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(255,216,206,1) 0%,rgba(255,240,231,1) 100%); /* W3C */
 	}
 			
 .jumbotron {
@@ -160,14 +158,8 @@ footer, #footTable {
 	
 /* Smartphones (portrait & landscape) Mainly iPhone 4 - 6 */
 @media only screen
-	and (max-device-width: 414px)
-	and (orientation: portrait),
-	(max-width: 414px),
-	and (min-device-width: 415px) 
-	and (max-device-width: 767px)
-	and (orientation: landscape), 
-	(min-width : 415px) 
-	and (max-width : 767px) {
+	and (max-device-width: 767px),
+	(max-width : 767px) {
 	
 		.container-fluid {
 			margin-top: 4%; 
@@ -194,7 +186,7 @@ footer, #footTable {
   		#column3 {
   			display: none;
   			}
-	
+  			
 	}
 
 	
