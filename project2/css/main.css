@@ -15,12 +15,12 @@
 	}
 	
 body {
-	background: #B89E69;
+	background: #FFF0E7;
 	}
 			
 .jumbotron {
 	margin-top: 2.63852243%;
-	background: url("../images/japan.jpg");
+	background: url("../images/japan6.jpg");
 	}
 	
 .panel-primary > .panel-heading {
@@ -32,6 +32,11 @@ body {
 	border-color: #FF4848;
 	}
 	
+hr {
+	border-top: 1px solid #BDD684;
+	border-bottom: 1px solid #BDD684;
+	}
+	
 	
 	
 /* _____________________________________ */
@@ -39,7 +44,7 @@ body {
 /* _____________________________________ */
 
 .nav-pills > li > a:hover, .nav-pills > li.active > a:hover {
-	background: #FFBEBE;
+	background: #FFE2DA;
 	color: #AD2809;
 	}
 
@@ -65,7 +70,29 @@ body {
 	color: #AD2809;
 	}
 	
-.caption .btn-default, .media-body .btn-default, .form-group .btn-info {
+.resources {
+	margin-bottom: 2%;
+	}
+
+
+
+/* _____________________________________ */
+/*                 LINKS                 */
+/* _____________________________________ */	
+
+table a:link {
+	color: #FF4848 !important;
+	}
+	
+	
+	
+/* _____________________________________ */
+/*               BUTTONS                 */
+/* _____________________________________ */	
+.caption .btn-default, 
+.media-body .btn-default, 
+.form-group .btn-info,
+.dropup .btn-default {
 	background: #FF9393;
 	border-color: #FF4848;
 	text-shadow: none;
@@ -75,12 +102,6 @@ body {
 .glyphicon-lock {
 	padding-left: 1%;
 	}
-
-
-
-/* _____________________________________ */
-/*                 LINKS                 */
-/* _____________________________________ */	
 
 
 
@@ -103,7 +124,7 @@ body {
 	margin: 2% auto;
 	}
 	
-#copyR, #footTable {
+footer, #footTable {
 	text-align: center;
 	}	
 
@@ -210,9 +231,10 @@ body {
 			}
 			
 		.nav {
-			background: #EDE3C8;
+			background: #BDD684;
 			padding: 2% 0;
 			border-radius: 0.375em;
+			border: 1px solid #5E534A;
 			}
 			
 		.nav-pills > li {
@@ -220,7 +242,7 @@ body {
 			}
 			
 		.nav-pills > li > a {
-			background: hsla(52, 100%, 100%, 0.7);
+			background: #fff;
 			color: #AD2809;
 			}
 			
@@ -255,9 +277,10 @@ body {
 			}
 			
 		.nav {
-			background: #EDE3C8;
+			background: #BDD684;
 			padding: 2% 0;
 			border-radius: 0.375em;
+			border: 1px solid #5E534A;
 			}
 			
 		.nav-pills > li {
@@ -265,7 +288,7 @@ body {
 			}
 			
 		.nav-pills > li > a {
-			background: hsla(52, 100%, 100%, 0.7);
+			background: #fff;
 			color: #AD2809;
 			}
 			
