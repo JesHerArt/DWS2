@@ -80,7 +80,7 @@ hr {
 /*                 LINKS                 */
 /* _____________________________________ */	
 
-table a:link {
+table a:link, table a:visited {
 	color: #FF4848 !important;
 	}
 	
