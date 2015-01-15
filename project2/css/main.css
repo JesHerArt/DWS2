@@ -184,6 +184,10 @@ body {
   		#column3 {
   			display: none;
   			}
+  		
+  		.jumbotron {
+			background: url("../images/mount-fuji.jpg");
+			}
 			
 	}
 	
@@ -223,6 +227,10 @@ body {
 		.nav-pills > li.active > a {
 			background: #AD2809;
 			color: #fff;
+			}
+			
+		.jumbotron {
+			background: url("../images/toyama-castle.jpg");
 			}
 	
 	}
