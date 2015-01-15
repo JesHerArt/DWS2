@@ -69,6 +69,10 @@ body {
 	background: #FF9393;
 	border-color: #FF4848;
 	}
+	
+.caption > a {
+	color: #412A22;
+	}
 
 
 
