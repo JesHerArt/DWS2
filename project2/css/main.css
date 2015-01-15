@@ -65,13 +65,15 @@ body {
 	color: #AD2809;
 	}
 	
-.caption .btn-default {
+.caption .btn-default, .media-body .btn-default, .form-group .btn-info {
 	background: #FF9393;
 	border-color: #FF4848;
+	text-shadow: none;
+	color: #fff;
 	}
 	
-.caption > a {
-	color: #412A22;
+.glyphicon-lock {
+	padding-left: 1%;
 	}
 
 
