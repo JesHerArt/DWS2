@@ -15,7 +15,15 @@
 	}
 	
 body {
-	background: #FFF0E7;
+	background: background: rgb(255,216,206); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(255,216,206,1) 0%, rgba(255,240,231,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,216,206,1)), color-stop(100%,rgba(255,240,231,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(255,216,206,1) 0%,rgba(255,240,231,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(255,216,206,1) 0%,rgba(255,240,231,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(255,216,206,1) 0%,rgba(255,240,231,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(255,216,206,1) 0%,rgba(255,240,231,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffd8ce', endColorstr='#fff0e7',GradientType=0 ); /* IE6-9 */
+;
 	}
 			
 .jumbotron {
@@ -66,13 +74,14 @@ hr {
 	border-color: #751C06;
 	}
 	
-.caption > h3 {
+.caption > h3, .red {
 	color: #AD2809;
 	}
 	
 .resources {
 	margin-bottom: 2%;
 	}
+
 
 
 
@@ -141,6 +150,24 @@ footer, #footTable {
 	(max-width: 414px) {
 	
 	/* ----------- MAIN STYLE ------------ */	
+  			
+  		.jumbotron {
+			background: url("../images/japan3.jpg");
+			}
+		
+	}
+	
+	
+/* Smartphones (portrait & landscape) Mainly iPhone 4 - 6 */
+@media only screen
+	and (max-device-width: 414px)
+	and (orientation: portrait),
+	(max-width: 414px),
+	and (min-device-width: 415px) 
+	and (max-device-width: 767px)
+	and (orientation: landscape), 
+	(min-width : 415px) 
+	and (max-width : 767px) {
 	
 		.container-fluid {
 			margin-top: 4%; 
@@ -167,12 +194,9 @@ footer, #footTable {
   		#column3 {
   			display: none;
   			}
-  			
-  		.jumbotron {
-			background: url("../images/japan3.jpg");
-			}
-		
+	
 	}
+
 	
 	
 	
@@ -183,28 +207,6 @@ footer, #footTable {
 	and (orientation: landscape), 
 	(min-width : 415px) 
 	and (max-width : 767px) {
-		
-		.ghost {
-			display: none;
-			}
-			
-		.col-xs-12 {
-			margin-top: 4%;
-			}
-			
-		.nav-pills > li > a {
-			background: #AD2809;
-			color: #fff;
-			}
-		
-		.nav-pills > li.active > a {
-  			color: #AD2809;
-  			background: #fff;
-  			}
-  			
-  		#column3 {
-  			display: none;
-  			}
   		
   		.jumbotron {
 			background: url("../images/mount-fuji.jpg");
