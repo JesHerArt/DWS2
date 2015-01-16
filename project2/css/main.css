@@ -117,7 +117,7 @@ table a:link, table a:visited {
 /* _____________________________________ */
 
 .carousel {
-	margin-bottom: 20px;
+	margin-bottom: 21.75592625%;
 	}
 
 
@@ -147,7 +147,7 @@ footer, #footTable {
 	and (orientation: portrait),
 	(max-width: 414px) {
 	
-	/* ----------- MAIN STYLE ------------ */	
+	/* ------------- IMAGES --------------- */	
   			
   		.jumbotron {
 			background: url("../images/japan3.jpg");
@@ -161,17 +161,23 @@ footer, #footTable {
 	and (max-device-width: 767px),
 	(max-width : 767px) {
 	
+	/* ----------- MAIN STYLES ------------ */
+	
 		.container-fluid {
 			margin-top: 4%; 
 			}	
+	
+	/* ------------- IMAGES --------------- */	
 		
 		.ghost {
 			display: none;
 			}
-			
+				
 		.col-xs-12 {
 			margin-top: 4%;
 			}
+			
+	/* ------------ NAVIGATION ------------ */
 			
 		.nav-pills > li > a {
 			background-color: #AD2809;
@@ -183,13 +189,14 @@ footer, #footTable {
   			background-color: #fff;
   			}
   			
+  	/* -------------- TABLE --------------- */
+  			
   		#column3 {
   			display: none;
   			}
   			
 	}
 
-	
 	
 	
 /* Smartphones (landscape) Mainly iPhone 4 - 6 */
@@ -199,6 +206,8 @@ footer, #footTable {
 	and (orientation: landscape), 
 	(min-width : 415px) 
 	and (max-width : 767px) {
+	
+	/* ------------- IMAGES --------------- */
   		
   		.jumbotron {
 			background: url("../images/mount-fuji.jpg");
@@ -216,13 +225,19 @@ footer, #footTable {
 	(min-width : 768px)
 	and (max-width : 899px) {
 	
+	/* ----------- MAIN STYLES ------------ */
+	
 		.container-fluid {
 			margin: 2% auto; 
 			}
+			
+	/* --------- HEADINGS & TEXT ---------- */		
 		
 		.carousel-caption h3 {
 			font-size: 75%;
 			}
+			
+	/* ------------ NAVIGATION ------------ */		
 			
 		.nav {
 			background: #BDD684;
@@ -245,6 +260,8 @@ footer, #footTable {
 			color: #fff;
 			}
 			
+	/* ------------- IMAGES --------------- */		
+			
 		.jumbotron {
 			background: url("../images/toyama-castle.jpg");
 			}
@@ -257,18 +274,24 @@ footer, #footTable {
 @media only screen 
 	and (min-width : 900px) {
 	
+	/* ----------- MAIN STYLES ------------ */
+	
 		.container-fluid {
 			width: 82%;
 			margin: 2% auto; 
 			}
 			
+		.searchAlert {
+			width: 90%;
+			}
+			
+	/* --------- HEADINGS & TEXT ---------- */
+			
 		.carousel-caption h3 {
 			font-size: 130%;
 			}
 			
-		.searchAlert {
-			width: 90%;
-			}
+	/* ------------ NAVIGATION ------------ */	
 			
 		.nav {
 			background: #BDD684;
