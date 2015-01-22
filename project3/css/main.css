@@ -41,6 +41,35 @@ header, footer {
 	border-radius: 3px;
 	} 
 	
+.floatLeft {
+	width: 48%;
+	float: left;
+	}
+	
+.clear {
+	clear: both;
+	}
+	
+	
+	
+/* _____________________________________ */
+/*              NAVIGATION               */
+/* _____________________________________ */
+
+#nav2 {
+	display: none;
+	}
+
+
+
+/* _____________________________________ */
+/*           HEADINGS & TEXT             */
+/* _____________________________________ */
+
+h2 {
+	border-bottom: 1px solid #333;
+	}
+
 #map {
 	text-align: center;
 	}
@@ -52,57 +81,20 @@ header, footer {
 label span {
 	color: red;
 	}
-	
-img {
-	max-width: 100%;
-	}
 
-#nav {
-	width: 23%;
-	position: absolute;
-	top: 6%;
-	left: -11.5%;
-	text-shadow: 1px 1px black;
-	
-	-webkit-box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.7);
-	-moz-box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.7);
-	box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.7);
-	}
-	
-#nav > div {
-	background: rgba(51, 51, 51, 0.95);
-	padding: 7% 5%;
-	border-bottom: 1px dashed yellow;
-	-webkit-transition-property: background,background-color,padding-left,color;
-	-webkit-transition-duration: 500ms,500ms,500ms,500ms;
-	}
-	
-#nav > div:last-child {
-	border-bottom: none;
-	}
-	
-#nav > div > a, #nav > div > a:visited {
-	color: white;
-	text-decoration: none;
-	}
-	
-#nav > div:hover {
-	padding-left: 19%;
-	background: url("../images/cone.png") no-repeat;
-	background-position: 3% 50%;
-	background-color: rgba(51, 51, 51, 0.85);
-	}
-	
-#nav > div:hover a {
-	color: #F8F9B3;
-	text-decoration: none;
-	}
-	
-h2 {
-	border-bottom: 1px solid #333;
-	}
-	
-input[type] {
+
+
+/* _____________________________________ */
+/*                 LINKS                 */
+/* _____________________________________ */
+
+
+
+/* _____________________________________ */
+/*                 FORM                  */
+/* _____________________________________ */
+
+input[type="text"], input[type="email"], input[type="number"], input[type="tel"] {
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	border: none;
@@ -112,6 +104,11 @@ input[type] {
 	border-radius: 0;
 	padding: 0;
 	margin: 0;
+	}
+	
+input[type="date"] {
+	-webkit-appearance: normal;
+	-moz-appearance: normal;
 	}
 	
 .group:before, .group:after {
@@ -130,13 +127,21 @@ input[type] {
 	}
 	
 form {
+	position: relative;
 	background: rgba(143, 240, 148, 0.3);
 	padding: 2% 3%;
+	
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
 	border-radius: 20px;
 	
 	-webkit-box-shadow: inset 1px 1px 10px rgba(0, 0, 0, 0.4);
 	-moz-box-shadow: inset 1px 1px 10px rgba(0, 0, 0, 0.4);
 	box-shadow: inset 1px 1px 10px rgba(0, 0, 0, 0.4);
+	}
+	
+div.group {
+	margin: 3% auto;
 	}
 	
 fieldset[title] {
@@ -146,31 +151,197 @@ fieldset[title] {
 	background: rgba(255, 255, 255, 0.6)
 	}
 	
+fieldset[title="Notes"] > textarea {
+	width: 100%;
+	}
+	
+fieldset[title="Contact Information"] label,
+fieldset[title="Destination Information"] label[class="no-col"]{
+	display: block;
+	width: 30%;
+	height: 10%;
+	float: left;
+	text-align: right;
+	padding: 1%;
+	margin-right: 1%;
+	}
+	
+fieldset[title="Destination Information"] input[class="col"] {
+	display: block;
+	width: 92%;
+	margin-bottom: 2%;
+	}
+	
+input[type="text"], input[type="email"], input[type="number"], input[type="tel"] {
+	background: pink;
+	border: 1px solid white;
+	padding: 1%;
+	}
+	
 input[type="submit"] {
 	padding: 1% 3%;
 	border-radius: 6px;
 	}
 	
-.floatLeft {
-	width: 50%;
-	float: left;
+
+
+
+
+/* _____________________________________ */
+/*                IMAGES                 */
+/* _____________________________________ */
+
+img {
+	max-width: 100%;
+	}
+
+
+
+/* _____________________________________ */
+/*                TABLE                  */
+/* _____________________________________ */	
+
+
+
+/* _____________________________________ */
+/*             MEDIA QUERIES             */
+/* _____________________________________ */
+
+/* Desktops and laptops */
+@media only screen 
+	and (min-width : 1171px) {
+
+	/* ----------- MAIN STYLE ------------ */
+	
+	
+	/* ----------- IMAGES ---------------- */
+	
+	
+	/* ----------- NAVIGATION ------------- */
+	
+	#nav {
+		width: 23%;
+		position: absolute;
+		top: 6%;
+		left: -11.5%;
+		text-shadow: 1px 1px black;
+	
+		-webkit-box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.7);
+		-moz-box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.7);
+		box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.7);
+		}
+	
+	#nav > div {
+		padding: 7% 5%;
+		border-bottom: 1px dashed yellow;
+		background: rgba(51, 51, 51, 0.95);
+		-webkit-transition-property: background,background-color,padding-left,color;
+		-webkit-transition-duration: 500ms,500ms,500ms,500ms;
+		}
+	
+	#nav > div > a, #nav > div > a:visited {
+		color: white;
+		text-decoration: none;
+		}
+	
+	#nav > div:hover a {
+		color: #F8F9B3;
+		text-decoration: none;
+		}
+	
+	#nav > div:last-child {
+		border-bottom: none;
+		}
+	
+	#nav > div:hover {
+		padding-left: 19%;
+		background: url("../images/cone.png") no-repeat;
+		background-position: 3% 50%;
+		background-color: rgba(51, 51, 51, 0.85);
+		}	
+	
 	}
 	
-fieldset[title="Notes"] > textarea {
-	wdith: 100%;
+	
+	
+/* Tablets (portrait) Mainly iPad */
+@media only screen
+	and (min-device-width: 768px)
+	and (max-device-width: 899px)
+	and (orientation: portrait),
+	(min-width : 768px)
+	and (max-width : 1170px) {
+	
+	/* ----------- MAIN STYLE ------------ */
+	
+	#mainContent {
+		width: 94%;
+		padding: 1% 3% 2% 3%;
+		margin-top: 9.5%;
+		} 
+	
+	
+	/* ----------- IMAGES ---------------- */
+	
+	
+	/* ----------- NAVIGATION ------------- */
+	
+	#nav {
+		display: none;
 	}
 	
-input[type="text"] {
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	border: none;
-	background: none;
-	-webkit-border-radius: 0;
-	-moz-border-radius: 0;
-	border-radius: 0;
-	padding: 0;
-	margin: 0;
+	#nav2 {
+		display: initial;
+		width: 100%;
+		margin: 1% 0;
+		font-size: 0.8em;
+		}
+		
+	#nav2 p a, #nav2:visited {
+		display: block;
+		float: left;
+		color: #fff;
+		text-decoration: none;
+		padding: 0 2%;
+		line-height: 2em;
+		border-right: 1px dashed yellow;
+		background-color: rgba(51, 51, 51, 0.95);
+		-webkit-transition-property: background-color, color;
+		-webkit-transition-duration: 500ms,500ms;
+		}
+		
+	#nav2 p a:hover {
+		background-color: rgba(51, 51, 51, 0.85);
+		color: #F8F9B3;
+		text-decoration: none;
+		}
+		
+/* 
+	#nav2 a:last-child {
+		border-right: none;
+		}
+ */
+	
+	
+	
+/* Smartphones (portrait & landscape) Mainly iPhone 4 - 6 */
+@media only screen
+	and (max-device-width: 767px),
+	(max-width : 767px) {
+	
+	/* ----------- MAIN STYLE ------------ */
+	
+	
+	/* ----------- IMAGES ---------------- */
+	
+	
+	/* ----------- NAVIGATION ------------- */
+	
+	
 	}
+	
+	
+
 	
 	
 	

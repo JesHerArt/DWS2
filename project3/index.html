@@ -36,6 +36,16 @@
 				<h1>ALL WHEELS TRANSPORTATION</h1>
 			</header>
 			
+			<div id="nav2">
+				<p><a href="index.html">Home</a></p>
+				<p><a href="#">Contact</a></p>
+				<p><a href="index.html">Request a Quote</a></p>
+				<p><a href="#">Terms</a></p>
+				<p><a href="#">Documents</a></p>
+				<p><a href="#">FAQs</a></p>
+				<p><a href="#">Rate Us</a></p>
+			</div>
+			
 			
 			<div id="mainContent">
 			
@@ -49,6 +59,7 @@
 					<div><a href="#">Rate Us</a></div>
 				</div>
 				
+<!-- 				<div id="insideContent"> -->
 				<h2>Request a Quote</h2>
 				
 				<p>Please fill out the form below to the best of your knowledge. Once we process your information, we will respond to you as soon as possible, by phone or by email.</p>
@@ -78,36 +89,47 @@
 						
 					</fieldset>
 					
-					<fieldset title="Delivery Information">
-						<legend>Delivery Information</legend>
+					<fieldset title="Destination Information">
+						<legend>Destination Information</legend>
+						
+						<div class="floatLeft">
+							<div class="item group">
+								<label for="pick-up">Pick-Up Address<span>*</span></label>
+								<input type="text" name="pick-up" id="pick-up" placeholder="City" required aria-required="true" autocomplete="off" tabindex="4" class="col"/>
+								<input type="text" name="pick-up" id="pick-up" placeholder="State" required aria-required="true" autocomplete="off" tabindex="5" class="col"/>
+								<input type="number" name="pick-up" id="pick-up" placeholder="Zip Code" required aria-required="true" autocomplete="off" tabindex="6" class="col"/>
+							</div>
+						
+							<div class="item group">
+								<label for="pick-date">Desired Pick-Up Date<span>*</span></label>
+								<input type="date" name="pick-date" id="pick-date" required aria-required="true" autocomplete="off" tabindex="7" />
+							</div>
+						</div>
+						
+						<div class="floatLeft">
+							<div class="item group">
+								<label for="drop-off">Drop-Off Address<span>*</span></label>
+								<input type="text" name="drop-off" id="drop-off" placeholder="City" required aria-required="true" autocomplete="off" tabindex="8" class="col"/>
+								<input type="text" name="drop-off" id="drop-off" placeholder="State" required aria-required="true" autocomplete="off" tabindex="9" class="col"/>
+								<input type="number" name="drop-off" id="drop-off" placeholder="Zip Code" required aria-required="true" autocomplete="off" tabindex="10" class="col"/>
+							</div>
+						
+							<div class="item group">
+								<label for="drop-date">Desired Drop-Off Date<span>*</span></label>
+								<input type="date" name="drop-date" id="drop-date" required aria-required="true" autocomplete="off" tabindex="11" />
+							</div>
+						</div>
+						
+						<hr class="clear">
 						
 						<div class="item group">
-							<label for="pick-up">Pick-Up Address<span>*</span></label>
-							<input type="text" name="pick-up" id="pick-up" placeholder="City" required aria-required="true" autocomplete="off" tabindex="4" />
-							<input type="text" name="pick-up" id="pick-up" placeholder="State" required aria-required="true" autocomplete="off" tabindex="5" />
-							<input type="number" name="pick-up" id="pick-up" placeholder="Zip Code" required aria-required="true" autocomplete="off" tabindex="6" />
+							<label for="drop-name" class="no-col">Drop-Off Contact Name</label>
+							<input type="text" name="drop-name" id="drop-name" placeholder="Jane Doe" autocomplete="off" tabindex="12" />
 						</div>
 						
 						<div class="item group">
-							<label for="pick-date">Desired Pick-Up Date<span>*</span></label>
-							<input type="date" name="pick-date" id="pick-date" required aria-required="true" autocomplete="off" tabindex="7" />
-						</div>
-						
-						<div class="item group">
-							<label for="drop-off">Drop-Off Address<span>*</span></label>
-							<input type="text" name="drop-off" id="drop-off" placeholder="City" required aria-required="true" autocomplete="off" tabindex="8" />
-							<input type="text" name="drop-off" id="drop-off" placeholder="State" required aria-required="true" autocomplete="off" tabindex="9" />
-							<input type="number" name="drop-off" id="drop-off" placeholder="Zip Code" required aria-required="true" autocomplete="off" tabindex="10" />
-						</div>
-						
-						<div class="item group">
-							<label for="drop-name">Drop-Off Contact Name</label>
-							<input type="text" name="drop-name" id="drop-name" placeholder="Jane Doe" autocomplete="off" tabindex="11" />
-						</div>
-						
-						<div class="item group">
-							<label for="drop-phone">Drop-Off Contact Phone Number</label>
-							<input type="tel" name="drop-phone" id="drop-phone" placeholder="(000) 000-0000" autocomplete="off" tabindex="12" />
+							<label for="drop-phone" class="no-col">Drop-Off Contact Phone Num</label>
+							<input type="tel" name="drop-phone" id="drop-phone" placeholder="(000) 000-0000" autocomplete="off" tabindex="13" />
 						</div>
 						
 					</fieldset>
@@ -118,7 +140,7 @@
 						<div class="floatLeft">
 							<div class="item group">
 								<label for="car-type">Vehicle Type<span>*</span></label>
-								<select id="car-type" required aria-required="true"  tabindex="13">
+								<select id="car-type" required aria-required="true"  tabindex="14">
 											<option value="choose">Choose..</option>
 											<option value="sedan">Sedan</option>
 											<option value="pick-up truck">Pick-up truck</option>
@@ -130,46 +152,46 @@
 							
 							<div class="item group">	
 								<p>Doors<span>*</span></p>
-								<input type="radio" name="doors" id="2-door" value="1" tabindex="14" />
+								<input type="radio" name="doors" id="2-door" value="1" tabindex="15" />
 								<label for="2-door">2 Door</label>
-								<input type="radio" name="doors" id="4-door" value="2" tabindex="15" />
+								<input type="radio" name="doors" id="4-door" value="2" tabindex="16" />
 								<label for="4-door">4 Door</label>
 							</div>
 						
 							<div class="item group">
 								<label for="year">Vehicle Year<span>*</span></label>
-								<input type="number" name="year" id="year" placeholder="YYYY" required aria-required="true" autocomplete="off" tabindex="16" />
+								<input type="number" name="year" id="year" placeholder="YYYY" required aria-required="true" autocomplete="off" tabindex="17" />
 							</div>
 							
 							<div class="item group">
 								<label for="make">Vehicle Make<span>*</span></label>
-								<input type="text" name="make" id="make" placeholder="Ex: Nissan" required aria-required="true" autocomplete="off" tabindex="17" />
+								<input type="text" name="make" id="make" placeholder="Ex: Nissan" required aria-required="true" autocomplete="off" tabindex="18" />
 							</div>
 							
 							<div class="item group">
 								<label for="model">Vehicle Model<span>*</span></label>
-								<input type="text" name="model" id="model" placeholder="Ex: Sentra" required aria-required="true" autocomplete="off" tabindex="18" />
+								<input type="text" name="model" id="model" placeholder="Ex: Sentra" required aria-required="true" autocomplete="off" tabindex="19" />
 							</div>
 						</div>
 						
 						<div class="floatLeft">
 							<div class="item group">
 								<p>Check all that apply</p>
-								<input type="checkbox" name="applicable" id="longbed" value="longbed" tabindex="19" />
+								<input type="checkbox" name="applicable" id="longbed" value="longbed" tabindex="20" />
 								<label for="longbed">Longbed</label>
-								<input type="checkbox" name="applicable" id="shortbed" value="shortbed" tabindex="20" />
+								<input type="checkbox" name="applicable" id="shortbed" value="shortbed" tabindex="21" />
 								<label for="shortbed">Shortbed</label>
-								<input type="checkbox" name="applicable" id="lifted" value="lifted" tabindex="21" />
+								<input type="checkbox" name="applicable" id="lifted" value="lifted" tabindex="22" />
 								<label for="lifted">Lifted</label>
-								<input type="checkbox" name="applicable" id="wheel" value="wheel" tabindex="22" />
+								<input type="checkbox" name="applicable" id="wheel" value="wheel" tabindex="23" />
 								<label for="wheel">Custom Wheel Size</label>
-								<input type="checkbox" name="applicable" id="other" value="other" tabindex="23" />
+								<input type="checkbox" name="applicable" id="other" value="other" tabindex="24" />
 								<label for="other">Other</label>
 							</div>
 						
 							<div class="item group">
 								<label for="comments">Applicable Comments</label>
-								<textarea id="comments" placeholder="If one or more options from above checkboxes are selected, please state the length/height/sizes here..." autocomplete="off" tabindex="24"></textarea>
+								<textarea id="comments" placeholder="If one or more options from above checkboxes are selected, please state the length/height/sizes here..." autocomplete="off" tabindex="25"></textarea>
 							</div>
 						</div>
 					
