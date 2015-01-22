@@ -1,0 +1,91 @@
+/* 
+		Jessica J. Hernandez
+		Week 3 - Site 1
+		DWS-2 201501-01
+		January 21, 2015
+ */
+
+
+/* _____________________________________ */
+/*              MAIN STYLES              */
+/* _____________________________________ */
+
+body {
+	background: url("../images/road.jpg") no-repeat;
+	/* background-position: 0 -150px; */
+	background-attachment: fixed;
+	background-position: 0 -210px;
+	}
+
+#container {
+	position: relative;
+	width: 70%;
+	margin: 1% auto;
+	}
+	
+header, footer {
+	width: 100%;
+	height: 150px;
+	position: relative;
+	background: rgba(51, 51, 51, 0.95);
+	border-radius: 3px;
+	}
+	
+#mainContent {
+	position: relative;
+	background: rgba(255, 255, 255, 0.85);
+	width: 78%;
+	padding: 3% 5% 3% 17%;
+	margin: 0.5% 0;
+	border-radius: 3px;
+	} 
+	
+#map {
+	text-align: center;
+	}
+	
+#map span {
+	font-weight: bold;
+	}
+	
+label span {
+	color: red;
+	}
+	
+img {
+	max-width: 100%;
+	}
+
+#nav {
+	background: rgba(51, 51, 51, 0.95);
+	width: 23%;
+	position: absolute;
+	top: 10%;
+	left: -11.5%;
+	text-shadow: 1px 1px black;
+	
+	-webkit-box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.7);
+	-moz-box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.7);
+	box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.7);
+	}
+	
+#nav > div {
+	width: 86%;
+	margin: 0 2%;
+	padding: 7% 5%;
+	border-bottom: 1px dashed yellow;
+	text-shadow: 
+	}
+	
+#nav > div:last-child {
+	border-bottom: none;
+	}
+	
+#nav > div > a {
+	color: white;
+	text-decoration: none;
+	}
+	
+	
+	
+	
