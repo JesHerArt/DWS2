@@ -40,13 +40,13 @@
 			<div id="mainContent">
 			
 				<div id="nav">
-					<div><a href="">Home</a></div>
-					<div><a href="">Contact</a></div>
-					<div><a href="">Request a Quote</a></div>
-					<div><a href="">Terms & Conditions</a></div>
-					<div><a href="">Documents</a></div>
-					<div><a href="">FAQs</a></div>
-					<div><a href="">Rate Us</a></div>
+					<div><a href="index.html">Home</a></div>
+					<div><a href="#">Contact</a></div>
+					<div><a href="index.html">Request a Quote</a></div>
+					<div><a href="#">Terms & Conditions</a></div>
+					<div><a href="#">Documents</a></div>
+					<div><a href="#">FAQs</a></div>
+					<div><a href="#">Rate Us</a></div>
 				</div>
 				
 				<h2>Request a Quote</h2>
@@ -61,77 +61,133 @@
 					<fieldset title="Contact Information">
 						<legend>Contact Information</legend>
 						
-						<label for="name">Full Name<span>*</span></label>
-						<input type="text" name="name" id="name" placeholder="John Doe" required aria-required="true" autocomplete="off" tabindex="1" />
+						<div class="item group">
+							<label for="name">Full Name<span>*</span></label>
+							<input type="text" name="name" id="name" placeholder="John Doe" required aria-required="true" autocomplete="off" tabindex="1" />
+						</div>
 						
-						<label for="phone">Phone Number<span>*</span></label>
-						<input type="tel" name="phone" id="phone" placeholder="(000) 000-0000" required aria-required="true" autocomplete="off" tabindex="2" />
+						<div class="item group">
+							<label for="phone">Phone Number<span>*</span></label>
+							<input type="tel" name="phone" id="phone" placeholder="(000) 000-0000" required aria-required="true" autocomplete="off" tabindex="2" />
+						</div>
 						
-						<label for="e-mail">E-mail<span>*</span></label>
-						<input type="email" name="e-mail" id="e-mail" placeholder="my_name@example.com" required aria-required="true" autocomplete="off" tabindex="3" />
+						<div class="item group">
+							<label for="e-mail">E-mail<span>*</span></label>
+							<input type="email" name="e-mail" id="e-mail" placeholder="my_name@example.com" required aria-required="true" autocomplete="off" tabindex="3" />
+						</div>
 						
 					</fieldset>
 					
 					<fieldset title="Delivery Information">
 						<legend>Delivery Information</legend>
 						
-						<label for="pick-up">Pick-Up Address<span>*</span></label>
-						<input type="text" name="pick-up" id="pick-up" placeholder="City" required aria-required="true" autocomplete="off" tabindex="4" />
-						<input type="text" name="pick-up" id="pick-up" placeholder="State" required aria-required="true" autocomplete="off" tabindex="5" />
-						<input type="number" name="pick-up" id="pick-up" placeholder="Zip Code" required aria-required="true" autocomplete="off" tabindex="6" />
+						<div class="item group">
+							<label for="pick-up">Pick-Up Address<span>*</span></label>
+							<input type="text" name="pick-up" id="pick-up" placeholder="City" required aria-required="true" autocomplete="off" tabindex="4" />
+							<input type="text" name="pick-up" id="pick-up" placeholder="State" required aria-required="true" autocomplete="off" tabindex="5" />
+							<input type="number" name="pick-up" id="pick-up" placeholder="Zip Code" required aria-required="true" autocomplete="off" tabindex="6" />
+						</div>
 						
-						<label for="pick-date">Desired Pick-Up Date<span>*</span></label>
-						<input type="date" name="pick-date" id="pick-date" required aria-required="true" autocomplete="off" tabindex="7" />
+						<div class="item group">
+							<label for="pick-date">Desired Pick-Up Date<span>*</span></label>
+							<input type="date" name="pick-date" id="pick-date" required aria-required="true" autocomplete="off" tabindex="7" />
+						</div>
 						
-						<label for="drop-off">Drop-Off Address<span>*</span></label>
-						<input type="text" name="drop-off" id="drop-off" placeholder="City" required aria-required="true" autocomplete="off" tabindex="8" />
-						<input type="text" name="drop-off" id="drop-off" placeholder="State" required aria-required="true" autocomplete="off" tabindex="9" />
-						<input type="number" name="drop-off" id="drop-off" placeholder="Zip Code" required aria-required="true" autocomplete="off" tabindex="10" />
+						<div class="item group">
+							<label for="drop-off">Drop-Off Address<span>*</span></label>
+							<input type="text" name="drop-off" id="drop-off" placeholder="City" required aria-required="true" autocomplete="off" tabindex="8" />
+							<input type="text" name="drop-off" id="drop-off" placeholder="State" required aria-required="true" autocomplete="off" tabindex="9" />
+							<input type="number" name="drop-off" id="drop-off" placeholder="Zip Code" required aria-required="true" autocomplete="off" tabindex="10" />
+						</div>
 						
-						<label for="drop-name">Drop-Off Contact Name</label>
-						<input type="text" name="drop-name" id="drop-name" placeholder="Jane Doe" autocomplete="off" tabindex="11" />
+						<div class="item group">
+							<label for="drop-name">Drop-Off Contact Name</label>
+							<input type="text" name="drop-name" id="drop-name" placeholder="Jane Doe" autocomplete="off" tabindex="11" />
+						</div>
 						
-						<label for="drop-phone">Drop-Off Contact Phone Number</label>
-						<input type="tel" name="drop-phone" id="drop-phone" placeholder="(000) 000-0000" autocomplete="off" tabindex="12" />
+						<div class="item group">
+							<label for="drop-phone">Drop-Off Contact Phone Number</label>
+							<input type="tel" name="drop-phone" id="drop-phone" placeholder="(000) 000-0000" autocomplete="off" tabindex="12" />
+						</div>
 						
 					</fieldset>
 					
 					<fieldset title="Vehicle Information">
 						<legend>Vehicle Information</legend>
 						
-						<label for="car-type">Vehicle Type<span>*</span></label>
-						<select id="car-type" required aria-required="true"  tabindex="13">
-        							<option value="choose">Choose..</option>
-        							<option value="sedan">Sedan</option>
-        							<option value="pick-up truck">Pick-up truck</option>
-        							<option value="suv">SUV</option>
-        							<option value="conversitble">Convertible</option>
-        							<option value="van">Van</option>
-      							</select>
-      							
-      					<label>Doors<span>*</span></label>
-      					<input type="radio" name="doors" id="2-door" value="1" tabindex="14" />
-      					<label for="2-door">2 Door</label>
-      					<input type="radio" name="doors" id="4-door" value="2" tabindex="15" />
-      					<label for="4-door">4 Door</label>
-      					
-      					<label for="year">Vehicle Year<span>*</span></label>
-      					<input type="number" name="year" id="year" placeholder="YYYY" required aria-required="true" autocomplete="off" tabindex="16" />
-      					
-      					<label for="make">Vehicle Make<span>*</span></label>
-						<input type="text" name="make" id="make" placeholder="Ex: Nissan" required aria-required="true" autocomplete="off" tabindex="17" />
+						<div class="floatLeft">
+							<div class="item group">
+								<label for="car-type">Vehicle Type<span>*</span></label>
+								<select id="car-type" required aria-required="true"  tabindex="13">
+											<option value="choose">Choose..</option>
+											<option value="sedan">Sedan</option>
+											<option value="pick-up truck">Pick-up truck</option>
+											<option value="suv">SUV</option>
+											<option value="conversitble">Convertible</option>
+											<option value="van">Van</option>
+								</select>
+							</div>
+							
+							<div class="item group">	
+								<p>Doors<span>*</span></p>
+								<input type="radio" name="doors" id="2-door" value="1" tabindex="14" />
+								<label for="2-door">2 Door</label>
+								<input type="radio" name="doors" id="4-door" value="2" tabindex="15" />
+								<label for="4-door">4 Door</label>
+							</div>
 						
-						<label for="model">Vehicle Model<span>*</span></label>
-						<input type="text" name="model" id="model" placeholder="Ex: Sentra" required aria-required="true" autocomplete="off" tabindex="18" />
+							<div class="item group">
+								<label for="year">Vehicle Year<span>*</span></label>
+								<input type="number" name="year" id="year" placeholder="YYYY" required aria-required="true" autocomplete="off" tabindex="16" />
+							</div>
+							
+							<div class="item group">
+								<label for="make">Vehicle Make<span>*</span></label>
+								<input type="text" name="make" id="make" placeholder="Ex: Nissan" required aria-required="true" autocomplete="off" tabindex="17" />
+							</div>
+							
+							<div class="item group">
+								<label for="model">Vehicle Model<span>*</span></label>
+								<input type="text" name="model" id="model" placeholder="Ex: Sentra" required aria-required="true" autocomplete="off" tabindex="18" />
+							</div>
+						</div>
 						
-						<label
+						<div class="floatLeft">
+							<div class="item group">
+								<p>Check all that apply</p>
+								<input type="checkbox" name="applicable" id="longbed" value="longbed" tabindex="19" />
+								<label for="longbed">Longbed</label>
+								<input type="checkbox" name="applicable" id="shortbed" value="shortbed" tabindex="20" />
+								<label for="shortbed">Shortbed</label>
+								<input type="checkbox" name="applicable" id="lifted" value="lifted" tabindex="21" />
+								<label for="lifted">Lifted</label>
+								<input type="checkbox" name="applicable" id="wheel" value="wheel" tabindex="22" />
+								<label for="wheel">Custom Wheel Size</label>
+								<input type="checkbox" name="applicable" id="other" value="other" tabindex="23" />
+								<label for="other">Other</label>
+							</div>
+						
+							<div class="item group">
+								<label for="comments">Applicable Comments</label>
+								<textarea id="comments" placeholder="If one or more options from above checkboxes are selected, please state the length/height/sizes here..." autocomplete="off" tabindex="24"></textarea>
+							</div>
+						</div>
 					
 					</fieldset>
 					
 					<fieldset title="Notes">
 						<legend>Notes</legend>
 						
+						<div class="item group">
+							<label for="other-comments"></label>
+							<textarea id="other-comments" placeholder="If you'd like to ask us questions or provide other comments for specifications about your vehicle, feel free to do so in this text box..." autocomplete="off" tabindex="25"></textarea>
+						</div>
+						
 					</fieldset>
+					
+					<p>We look forward to doing business with you!</p>
+					
+					<input type="submit" value="Submit Quote Request">
 				
 					
 				
