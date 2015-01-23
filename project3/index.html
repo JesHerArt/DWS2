@@ -20,6 +20,8 @@
 		<link href="css/normalize.css" rel="stylesheet" />
 		
 		<!-- Google Fonts -->
+		<link href='http://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Josefin+Sans:400,600' rel='stylesheet' type='text/css'>
 		
 		
 		<!-- Favicon -->
@@ -36,20 +38,24 @@
 				<h1>ALL WHEELS TRANSPORTATION</h1>
 			</header>
 			
-			<div id="nav2">
-				<p><a href="index.html">Home</a></p>
-				<p><a href="#">Contact</a></p>
-				<p><a href="index.html">Request a Quote</a></p>
-				<p><a href="#">Terms</a></p>
-				<p><a href="#">Documents</a></p>
-				<p><a href="#">FAQs</a></p>
-				<p><a href="#">Rate Us</a></p>
+			<div id="small-nav">
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="#">Contact</a></li>
+						<li><a href="index.html">Request a Quote</a></li>
+						<li><a href="#">Terms</a></li>
+						<li><a href="#">Documents</a></li>
+						<li><a href="#">FAQs</a></li>
+						<li><a href="#">Rate Us</a></li>
+					<ul>
+				</nav>
 			</div>
 			
 			
 			<div id="mainContent">
 			
-				<div id="nav">
+				<div id="side-nav">
 					<div><a href="index.html">Home</a></div>
 					<div><a href="#">Contact</a></div>
 					<div><a href="index.html">Request a Quote</a></div>
@@ -92,7 +98,7 @@
 					<fieldset title="Destination Information">
 						<legend>Destination Information</legend>
 						
-						<div class="floatLeft">
+						<div class="floatLeft destPart1">
 							<div class="item group">
 								<label for="pick-up">Pick-Up Address<span>*</span></label>
 								<input type="text" name="pick-up" id="pick-up" placeholder="City" required aria-required="true" autocomplete="off" tabindex="4" class="col"/>
@@ -106,7 +112,7 @@
 							</div>
 						</div>
 						
-						<div class="floatLeft">
+						<div class="floatLeft destPart2">
 							<div class="item group">
 								<label for="drop-off">Drop-Off Address<span>*</span></label>
 								<input type="text" name="drop-off" id="drop-off" placeholder="City" required aria-required="true" autocomplete="off" tabindex="8" class="col"/>
@@ -120,7 +126,7 @@
 							</div>
 						</div>
 						
-						<hr class="clear">
+						<hr class="clear hr">
 						
 						<div class="item group">
 							<label for="drop-name" class="no-col">Drop-Off Contact Name</label>
@@ -137,7 +143,7 @@
 					<fieldset title="Vehicle Information">
 						<legend>Vehicle Information</legend>
 						
-						<div class="floatLeft">
+						<div class="floatLeft vehPart1">
 							<div class="item group">
 								<label for="car-type">Vehicle Type<span>*</span></label>
 								<select id="car-type" required aria-required="true"  tabindex="14">
@@ -151,11 +157,11 @@
 							</div>
 							
 							<div class="item group">	
-								<p>Doors<span>*</span></p>
+								<p class="groupHead">Doors<span>*</span></p>
 								<input type="radio" name="doors" id="2-door" value="1" tabindex="15" />
-								<label for="2-door">2 Door</label>
+								<label for="2-door" class="selection">2 Door</label>
 								<input type="radio" name="doors" id="4-door" value="2" tabindex="16" />
-								<label for="4-door">4 Door</label>
+								<label for="4-door" class="selection">4 Door</label>
 							</div>
 						
 							<div class="item group">
@@ -174,24 +180,34 @@
 							</div>
 						</div>
 						
-						<div class="floatLeft">
+						<div class="floatLeft vehPart2">
 							<div class="item group">
-								<p>Check all that apply</p>
+								<p class="groupHead">Check all that apply</p>
+								<div class="floatLeft list">
 								<input type="checkbox" name="applicable" id="longbed" value="longbed" tabindex="20" />
-								<label for="longbed">Longbed</label>
+								<label for="longbed" class="selection">Longbed</label>
+								</div>
+								<div class="floatLeft list">
 								<input type="checkbox" name="applicable" id="shortbed" value="shortbed" tabindex="21" />
-								<label for="shortbed">Shortbed</label>
+								<label for="shortbed" class="selection">Shortbed</label>
+								</div>
+								<div class="floatLeft list">
 								<input type="checkbox" name="applicable" id="lifted" value="lifted" tabindex="22" />
-								<label for="lifted">Lifted</label>
+								<label for="lifted" class="selection">Lifted</label>
+								</div>
+								<div class="floatLeft list">
 								<input type="checkbox" name="applicable" id="wheel" value="wheel" tabindex="23" />
-								<label for="wheel">Custom Wheel Size</label>
+								<label for="wheel" class="selection">Custom Wheel Size</label>
+								</div>
+								<div class="floatLeft list">
 								<input type="checkbox" name="applicable" id="other" value="other" tabindex="24" />
-								<label for="other">Other</label>
+								<label for="other" class="selection">Other</label>
+								</div>
 							</div>
 						
 							<div class="item group">
-								<label for="comments">Applicable Comments</label>
-								<textarea id="comments" placeholder="If one or more options from above checkboxes are selected, please state the length/height/sizes here..." autocomplete="off" tabindex="25"></textarea>
+								<label for="comments">Applicable Comments</label> <br>
+								<textarea id="comments" placeholder="If one or more options from above checkboxes are selected, please state the length/height/sizes here..." autocomplete="off" tabindex="25" rows="6" cols="24"></textarea>
 							</div>
 						</div>
 					
@@ -202,7 +218,7 @@
 						
 						<div class="item group">
 							<label for="other-comments"></label>
-							<textarea id="other-comments" placeholder="If you'd like to ask us questions or provide other comments for specifications about your vehicle, feel free to do so in this text box..." autocomplete="off" tabindex="25"></textarea>
+							<textarea id="other-comments" placeholder="If you'd like to ask us questions or provide other comments for specifications about your vehicle, feel free to do so in this text box..." autocomplete="off" tabindex="25" rows="6"></textarea>
 						</div>
 						
 					</fieldset>
