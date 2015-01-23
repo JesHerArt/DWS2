@@ -51,9 +51,7 @@ header {
 .clear {
 	clear: both;
 	}
-	
 
-	
 	
 	
 /* _____________________________________ */
@@ -63,8 +61,7 @@ header {
 #small-nav {
 	display: none;
 	}
-
-
+	
 
 /* _____________________________________ */
 /*           HEADINGS & TEXT             */
@@ -90,8 +87,14 @@ h2 {
 	font-weight: bold;
 	}
 	
-label span {
+label span, p[class="groupHead floatLeft"] span {
 	color: red;
+	}
+	
+footer {
+	padding: 1.5% 2%;
+	text-align: center;
+	font-size: 0.8em;
 	}
 
 
@@ -99,6 +102,15 @@ label span {
 /* _____________________________________ */
 /*                 LINKS                 */
 /* _____________________________________ */
+footer a:link, footer a:visited {
+	color: #fff;
+	text-decoration: none;
+	}
+	
+footer a:hover, footer a:active {
+	color: #F8F9B3;
+	text-decoration: none;
+	}
 
 
 
@@ -106,195 +118,241 @@ label span {
 /*                 FORM                  */
 /* _____________________________________ */
 
-input[type="text"], input[type="email"], input[type="number"], input[type="tel"] {  /* nomalizing the form elements */
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	border: none;
-	background: none;
-	-webkit-border-radius: 0;
-	-moz-border-radius: 0;
-	border-radius: 0;
-	padding: 0;
-	margin: 0;
-	}
-	
-input[type="date"] {   /* nomalizing the form elements */
-	-webkit-appearance: normal;
-	-moz-appearance: normal;
-	}
-	
-.group:before, .group:after {   /* nomalizing the form elements */
-	content: "\0020";
-	display: block;
-	height: 0;
-	overflow: hidden;
-	}
-	
-.group:after {   /* nomalizing the form elements */
-	clear: both;
-	}
-	
-.group {   /* nomalizing the form elements */
-	zoom: 1;
-	}
-	
-form {
-	position: relative;
-	background: rgba(255, 232, 101, 0.3);
-	padding: 2% 3% 3% 3%;
-	border: 1px solid #333;
-	margin: 2% 0;
-	
-	-webkit-border-radius: 20px;
-	-moz-border-radius: 20px;
-	border-radius: 20px;
-	
-	-webkit-box-shadow: inset 1px 1px 10px rgba(0, 0, 0, 0.4);
-	-moz-box-shadow: inset 1px 1px 10px rgba(0, 0, 0, 0.4);
-	box-shadow: inset 1px 1px 10px rgba(0, 0, 0, 0.4);
-	
-	-webkit-box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.5);
-	-moz-box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.5);
-	box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.5);
-	}
-	
-div.group {
-	margin: 3% auto;
-	}
-	
-fieldset[title] {
-	position: relative;
-	margin: 3% auto;
-	border: 1px dashed #EBD012;
-	padding: 2% 3%;
-	background: rgba(255, 255, 255, 0.7);
-	}
-	
-fieldset[title="Notes"] > textarea {
-	width: 100%;
-	}
-	
-fieldset[title="Contact Information"] label,
-fieldset[title="Destination Information"] label[class="no-col"]{
-	display: block;
-	width: 30%;
-	height: 10%;
-	float: left;
-	text-align: right;
-	padding: 1%;
-	margin-right: 1%;
-	}
-	
-fieldset[title="Destination Information"] input[class="col"] {
-	display: block;
-	width: 92%;
-	margin-bottom: 2%;
-	}
-	
-input[type="text"], input[type="email"], input[type="number"], input[type="tel"], textarea {
-	background-color: #333;
-	border: 1px solid white;
-	border-radius: 4px;
-	padding: 2%;
-	-webkit-transition-property: background-color;
-	-webkit-transition-duration: 500ms;
-	}
-	
-input[type="text"]:hover, input[type="email"]:hover, input[type="number"]:hover, input[type="tel"]:hover, textarea:hover {
-	background-color: #7F7F64;
-	color: #fff;
-	-webkit-transition-property: background-color, color;
-	-webkit-transition-duration: 500ms,500ms;
-	}
-	
-input[type="text"]:focus, input[type="email"]:focus, input[type="number"]:focus, input[type="tel"]:focus, textarea:focus {
-	background-color: #E0E0E0;
-	color: #333;
-	outline: 1px solid #EBD012;
+/* nomalizing the form elements section */
 
-	-webkit-box-shadow: inset 1px 1px 10px rgba(0, 0, 0, 0.4);
-	-moz-box-shadow: inset 1px 1px 10px rgba(0, 0, 0, 0.4);
-	box-shadow: inset 1px 1px 10px rgba(0, 0, 0, 0.4);
-	}
+		input[type="text"], input[type="email"], input[type="number"], input[type="tel"] {  
+			-webkit-appearance: none;
+			-moz-appearance: none;
+			border: none;
+			background: none;
+			-webkit-border-radius: 0;
+			-moz-border-radius: 0;
+			border-radius: 0;
+			padding: 0;
+			margin: 0;
+			}
 	
-input[type="text"], input[type="email"], input[type="number"], input[type="tel"], textarea {
-	color: #fff;
-	}
+		input[type="date"] {   
+			-webkit-appearance: normal;
+			-moz-appearance: normal;
+			}
 	
-input[type="submit"] {
-	position: absolute;
-	right: 4%;
-	bottom: -0.5%;
-	padding: 1% 6%;
-	border-radius: 6px;
-	margin: 4%;
-	background-color: #EB3741;
-	color: #fff;
-	border: 1px solid #A6272E;
+		.group:before, .group:after {   
+			content: "\0020";
+			display: block;
+			height: 0;
+			overflow: hidden;
+			}
 	
-	-webkit-transition-property: background-color, text-transfor, border;
-	-webkit-transition-duration: 500ms,500ms,200ms;
-	}
+		.group:after {  
+			clear: both;
+			}
 	
-input[type="submit"]:hover {
-	background-color: #67D967;
-	text-transform: uppercase;
-	border: 1px dashed #50A14B;
+		.group {  
+			zoom: 1;
+			}
+			
+/* basic form elements section */
 	
-	-ms-transform: scale(1.5); /* IE 9 */
-    -webkit-transform: scale(1.5); /* Chrome, Safari, Opera */
-    transform: scale(1.2);
-	}
+		form {
+			position: relative;
+			background: rgba(255, 232, 101, 0.3);
+			padding: 2% 3% 3% 3%;
+			border: 1px solid #333;
+			margin: 2% 0;
 	
-label, .groupHead{
-	font-family: 'Fjalla One', sans-serif;
-	}
+			-webkit-border-radius: 20px;
+			-moz-border-radius: 20px;
+			border-radius: 20px;
 	
-input[type], label.selection, textarea[placeholder] {
-	font-family: 'Josefin Sans', sans-serif;
-	}
+			-webkit-box-shadow: inset 1px 1px 10px rgba(0, 0, 0, 0.4);
+			-moz-box-shadow: inset 1px 1px 10px rgba(0, 0, 0, 0.4);
+			box-shadow: inset 1px 1px 10px rgba(0, 0, 0, 0.4);
 	
-label[for="2-door"] {
-	margin-right: 7%;
-	}
+			-webkit-box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.5);
+			-moz-box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.5);
+			box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.5);
+			}
 	
-.list {
-	width: 100%;
-	clear: left;
-	margin-bottom: 2%;
-	}
+		div.group {
+			margin: 3% auto;
+			}
 	
-.leftSpace {
-	margin-left: 3%;
-	}
+		label, .groupHead{
+			font-family: 'Fjalla One', sans-serif;
+			}
+			
+		label[for="2-door"] {
+			margin-right: 7%;
+			}
 	
-.vehPart1 {
-	width: 60%;
-	}
+		.list {
+			width: 100%;
+			clear: left;
+			margin-bottom: 2%;
+			}
+	
+		.leftSpace {
+			margin-left: 3%;
+			}
+	
+		.vehPart1 {
+			width: 60%;
+			}
 
-.destPart1, .destPart2 {
-	width: 46%;
-	}
+		.destPart1, .destPart2 {
+			width: 46%;
+			}
 	
-.destPart1 {
-	margin-right: 6%;
-	}
+		.destPart1 {
+			margin-right: 6%;
+			}
 
-fieldset p {
-	margin: 0 0 1% 0;
-	}
-	
-fieldset[title="Contact Information"] input {
-	width: 50%;
-	}
-	
-textarea {
-	width: 95%;
-	height: 15%;
-	}
+		fieldset p {
+			margin: 0 0 1% 0;
+			}
+			
+/* fieldset elements section */
 
+		fieldset[title] {
+			position: relative;
+			margin: 3% auto;
+			border: 1px dashed #EBD012;
+			padding: 2% 3%;
+			background: rgba(255, 255, 255, 0.7);
+			}
 	
+		fieldset[title="Contact Information"] label,
+		fieldset[title="Destination Information"] label[class="no-col"], 
+		label[for="car-type"], label[for="year"], label[for="make"], label[for="model"],
+		p[class="groupHead floatLeft"] {
+			display: block;
+			width: 30%;
+			height: 10%;
+			float: left;
+			text-align: right;
+			padding: 1%;
+			margin-right: 1%;
+			}
+			
+		label[for="car-type"], label[for="year"], label[for="make"],
+		label[for="model"], p[class="groupHead floatLeft"] {
+			width: 25%;
+			text-align: left;
+			margin-right: 2%;
+			}
+			
+		legend {
+			display: none;
+			}
+	
+		fieldset:before {
+			content:attr(title);
+			display: block;
+			font: 1.3em Arial;
+			font-weight: bold;
+			border-bottom: 1px solid #333;
+			width: 100%;
+			margin-bottom: 3%;
+			color: #EB3741;
+			}
 
+			
+/* input elements section */
+
+		fieldset[title="Notes"] > textarea {
+			width: 100%;
+			}
+			
+		fieldset[title="Destination Information"] input[class="col"] {
+			display: block;
+			width: 92%;
+			margin-bottom: 2%;
+			}
+	
+		input[type="text"], input[type="email"], 
+		input[type="number"], input[type="tel"], 
+		textarea, input[type="date"], select {
+			color: #fff;
+			background-color: #333;
+			border: 1px solid white;
+			border-radius: 4px;
+			padding: 2%;
+			-webkit-transition-property: background-color;
+			-webkit-transition-duration: 500ms;
+			}
+	
+		input[type="text"]:hover, input[type="email"]:hover, 
+		input[type="number"]:hover, input[type="tel"]:hover, 
+		textarea:hover, input[type="date"]:hover , select:hover {
+			background-color: #7F7F64;
+			color: #fff;
+			-webkit-transition-property: background-color, color;
+			-webkit-transition-duration: 500ms,500ms;
+			}
+	
+		input[type="text"]:focus, input[type="email"]:focus, 
+		input[type="number"]:focus, input[type="tel"]:focus, 
+		textarea:focus, input[type="date"]:focus, select:focus {
+			background-color: #E0E0E0;
+			color: #333;
+			outline: 1px solid #EBD012;
+
+			-webkit-box-shadow: inset 1px 1px 10px rgba(0, 0, 0, 0.4);
+			-moz-box-shadow: inset 1px 1px 10px rgba(0, 0, 0, 0.4);
+			box-shadow: inset 1px 1px 10px rgba(0, 0, 0, 0.4);
+			}
+	
+		input[type="text"], input[type="email"],
+		input[type="number"], input[type="tel"] {
+			color: #fff;
+			}
+	
+		input[type="submit"] {
+			position: absolute;
+			right: 4%;
+			bottom: -0.5%;
+			padding: 1% 6%;
+			border-radius: 6px;
+			margin: 4%;
+			background-color: #EB3741;
+			color: #fff;
+			border: 1px solid #A6272E;
+	
+			-webkit-transition-property: background-color, text-transfor, border;
+			-webkit-transition-duration: 500ms,500ms,200ms;
+			}
+	
+		input[type="submit"]:hover {
+			background-color: #67D967;
+			text-transform: uppercase;
+			border: 1px dashed #50A14B;
+	
+			-ms-transform: scale(1.5); /* IE 9 */
+			-webkit-transform: scale(1.5); /* Chrome, Safari, Opera */
+			transform: scale(1.2);
+			}
+
+		input[type], label.selection, textarea[placeholder] {
+			font-family: 'Josefin Sans', sans-serif;
+			}
+	
+		fieldset[title="Contact Information"] input, .no-Col-Input {
+			width: 50%;
+			}
+			
+		textarea {
+			width: 95%;
+			height: 15%;
+			}
+	
+		.vehPart1 select#car-type {
+			width: 50%;
+			}
+			
+		select {
+			color: #fff !important;
+			}
 
 
 
@@ -305,16 +363,6 @@ textarea {
 img {
 	max-width: 100%;
 	}
-
-
-
-/* _____________________________________ */
-/*                TABLE                  */
-/* _____________________________________ */	
-
-
-
-
 
 
 
@@ -336,10 +384,6 @@ img {
 	header {
 		font-size: 150%;
 		}
-	
-	
-	/* ----------- IMAGES ---------------- */
-	
 	
 	/* ----------- NAVIGATION ------------- */
 	
@@ -408,10 +452,6 @@ img {
 		margin-top: 2%;
 		} 
 	
-	
-	/* ----------- IMAGES ---------------- */
-	
-	
 	/* ----------- NAVIGATION ------------- */
 	
 	nav li {
@@ -444,37 +484,40 @@ img {
 		
 	}
 		
+	
 		
 /* Shared Properties: Smartphones & Tablets */
 @media only screen
 	and (max-device-width: 899px),
 	(max-width : 1170px) {
 	
-		#side-nav {
-			display: none;
-			}
+	/* ----------- NAVIGATION ------------- */
 	
-		#small-nav {
-			display: block;
-			}
+	#side-nav {
+		display: none;
+		}
+
+	#small-nav {
+		display: block;
+		}
+	
+	nav {
+		margin: 1% auto;
+		text-align: center;
+		background-color: rgba(51, 51, 51, 0.95);
+		}
+	
+	nav + ul {
+		list-style-type: none;
+		}
+	
+	nav ul {
+		padding-left: 0;
+		}
 		
-		nav {
-			margin: 1% auto;
-			text-align: center;
-			background-color: rgba(51, 51, 51, 0.95);
-			}
-		
-		nav + ul {
-			list-style-type: none;
-			}
-		
-		nav ul {
-			padding-left: 0;
-			}
-			
-		nav li {
-			margin: 0;
-			}
+	nav li {
+		margin: 0;
+		}
 	
 	}
 
@@ -514,6 +557,8 @@ img {
 	header {
 		font-size: 100%;
 		}
+		
+	/* ------------- FORM ---------------- */
 	
 	input[type="submit"] {
 		position: relative;
@@ -521,11 +566,19 @@ img {
 		margin: 2% auto;
 		}
 		
- 
-	
-	
-	/* ----------- IMAGES ---------------- */
-	
+	fieldset[title="Contact Information"] input, .no-Col-Input, .vehPart1 select#car-type {
+			width: 95%;
+			}
+			
+	fieldset[title="Contact Information"] label,
+	fieldset[title="Destination Information"] label[class="no-col"],
+	label[for="car-type"], label[for="year"], label[for="make"],
+	label[for="model"],	p[class="groupHead floatLeft"] {
+		width: 100%;
+		float: none;
+		text-align: left;
+		margin-top: 2%;
+		}
 	
 	/* ----------- NAVIGATION ------------- */
 		
@@ -558,11 +611,4 @@ img {
 		text-decoration: none;
 		}
 	
-	
 	}
-	
-	
-
-	
-	
-	

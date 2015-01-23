@@ -19,25 +19,39 @@
 		<link href="css/main.css" rel="stylesheet" />
 		<link href="css/normalize.css" rel="stylesheet" />
 		
+		<!-- this css is used for the legend on the fieldsets -->
+		<!--[if lt IE 8]>
+			<style>
+				legend {
+					display: block;
+					font: 1.3em Arial;
+					font-weight: bold;
+					border-bottom: 1px solid #333;
+					width: 90%;
+					}
+			</style>
+		<![endif]-->
+		
+		
 		<!-- Google Fonts -->
 		<link href='http://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Josefin+Sans:400,600' rel='stylesheet' type='text/css'>
 		
 		
-		<!-- Favicon -->
-		<link rel="icon" type="image/png" href="images/favicoooooooooooooon.png">
-		
 	</head>
 	
 	
 	<body>
-	
+		
+		<!-- START OF CONTAINER DIV -->
 		<div id="container">
 		
+			<!-- HEADER OF WEBPAGE WITH COMPANY NAME -->
 			<header>
 				<h1>ALL WHEELS TRANSPORTATION</h1>
 			</header>
 			
+			<!-- NAVIGATION USED WITH SMALLER SCREENS -->
 			<div id="small-nav">
 				<nav>
 					<ul>
@@ -51,10 +65,13 @@
 					<ul>
 				</nav>
 			</div>
+			<!-- END OF SMALL NAV -->
 			
 			
+			<!-- START OF MAIN CONTENT DIV -->
 			<div id="mainContent">
 			
+				<!-- SIDE BAR NAVIGATION FOR BIGGER SCREEN SIZES -->
 				<div id="side-nav">
 					<div><a href="index.html">Home</a></div>
 					<div><a href="#">Contact</a></div>
@@ -64,8 +81,10 @@
 					<div><a href="#">FAQs</a></div>
 					<div><a href="#">Rate Us</a></div>
 				</div>
+				<!-- END OF SIDE BAR NAV -->
 				
-<!-- 				<div id="insideContent"> -->
+				
+				<!-- REQUEST A QUOTE PAGE CONTENT -->
 				<h2>Request a Quote</h2>
 				
 				<p>Please fill out the form below to the best of your knowledge. Once we process your information, we will respond to you as soon as possible, by phone or by email.</p>
@@ -73,8 +92,10 @@
 				<p id="map"><span>Areas in red are where we do business.</span><br><br><img src="images/map.png" alt="" title="" /></p>
 				
 				
+				<!-- START OF REQUEST QUOTE FORM -->
 				<form id="quote" class="group" action="mailto:jesherart@fullsail.edu?subject=Request a Quote Form" method="POST" enctype="text/plain">
 				
+					<!-- START OF CONTACT SECTION -->
 					<fieldset title="Contact Information">
 						<legend>Contact Information</legend>
 						
@@ -94,7 +115,9 @@
 						</div>
 						
 					</fieldset>
+					<!-- END OF CONTACT SECTION -->
 					
+					<!-- START OF DESTINATION SECTION -->
 					<fieldset title="Destination Information">
 						<legend>Destination Information</legend>
 						
@@ -126,20 +149,22 @@
 							</div>
 						</div>
 						
-						<hr class="clear hr">
+						<hr class="clear hr destPart3">
 						
-						<div class="item group">
+						<div class="item group destPart3">
 							<label for="drop-name" class="no-col">Drop-Off Contact Name</label>
-							<input type="text" name="drop-name" id="drop-name" placeholder="Jane Doe" autocomplete="off" tabindex="12" />
+							<input class="no-Col-Input" type="text" name="drop-name" id="drop-name" placeholder="Jane Doe" autocomplete="off" tabindex="12" />
 						</div>
 						
 						<div class="item group">
 							<label for="drop-phone" class="no-col">Drop-Off Contact Phone Num</label>
-							<input type="tel" name="drop-phone" id="drop-phone" placeholder="(000) 000-0000" autocomplete="off" tabindex="13" />
+							<input class="no-Col-Input" type="tel" name="drop-phone" id="drop-phone" placeholder="(000) 000-0000" autocomplete="off" tabindex="13" />
 						</div>
 						
 					</fieldset>
+					<!-- END OF DESTINATION SECTION -->
 					
+					<!-- START OF VEHICLE SECTION -->
 					<fieldset title="Vehicle Information">
 						<legend>Vehicle Information</legend>
 						
@@ -147,62 +172,68 @@
 							<div class="item group">
 								<label for="car-type">Vehicle Type<span>*</span></label>
 								<select id="car-type" required aria-required="true"  tabindex="14">
-											<option value="choose">Choose..</option>
-											<option value="sedan">Sedan</option>
-											<option value="pick-up truck">Pick-up truck</option>
-											<option value="suv">SUV</option>
-											<option value="conversitble">Convertible</option>
-											<option value="van">Van</option>
+									<option value="choose">Choose..</option>
+									<option value="sedan">Sedan</option>
+									<option value="pick-up truck">Pick-up truck</option>
+									<option value="suv">SUV</option>
+									<option value="conversitble">Convertible</option>
+									<option value="van">Van</option>
 								</select>
 							</div>
 							
 							<div class="item group">	
-								<p class="groupHead">Doors<span>*</span></p>
-								<input type="radio" name="doors" id="2-door" value="1" tabindex="15" />
-								<label for="2-door" class="selection">2 Door</label>
-								<input type="radio" name="doors" id="4-door" value="2" tabindex="16" />
-								<label for="4-door" class="selection">4 Door</label>
+								<p class="groupHead floatLeft">Doors<span>*</span></p>
+								<input  type="radio" name="doors" id="2-door" value="1" tabindex="15" />
+								<label  for="2-door" class="selection">2 Door</label>
+								<input  type="radio" name="doors" id="4-door" value="2" tabindex="16" />
+								<label  for="4-door" class="selection">4 Door</label>
 							</div>
 						
 							<div class="item group">
 								<label for="year">Vehicle Year<span>*</span></label>
-								<input type="number" name="year" id="year" placeholder="YYYY" required aria-required="true" autocomplete="off" tabindex="17" />
+								<input class="no-Col-Input" type="number" name="year" id="year" placeholder="YYYY" required aria-required="true" autocomplete="off" tabindex="17" />
 							</div>
 							
 							<div class="item group">
 								<label for="make">Vehicle Make<span>*</span></label>
-								<input type="text" name="make" id="make" placeholder="Ex: Nissan" required aria-required="true" autocomplete="off" tabindex="18" />
+								<input class="no-Col-Input" type="text" name="make" id="make" placeholder="Ex: Nissan" required aria-required="true" autocomplete="off" tabindex="18" />
 							</div>
 							
 							<div class="item group">
 								<label for="model">Vehicle Model<span>*</span></label>
-								<input type="text" name="model" id="model" placeholder="Ex: Sentra" required aria-required="true" autocomplete="off" tabindex="19" />
+								<input class="no-Col-Input" type="text" name="model" id="model" placeholder="Ex: Sentra" required aria-required="true" autocomplete="off" tabindex="19" />
 							</div>
 						</div>
 						
 						<div class="floatLeft vehPart2">
 							<div class="item group">
 								<p class="groupHead">Check all that apply</p>
+								
 								<div class="floatLeft list">
-								<input type="checkbox" name="applicable" id="longbed" value="longbed" tabindex="20" />
-								<label for="longbed" class="selection">Longbed</label>
+									<input type="checkbox" name="applicable" id="longbed" value="longbed" tabindex="20" />
+									<label for="longbed" class="selection">Longbed</label>
 								</div>
+								
 								<div class="floatLeft list">
-								<input type="checkbox" name="applicable" id="shortbed" value="shortbed" tabindex="21" />
-								<label for="shortbed" class="selection">Shortbed</label>
+									<input type="checkbox" name="applicable" id="shortbed" value="shortbed" tabindex="21" />
+									<label for="shortbed" class="selection">Shortbed</label>
 								</div>
+								
 								<div class="floatLeft list">
-								<input type="checkbox" name="applicable" id="lifted" value="lifted" tabindex="22" />
-								<label for="lifted" class="selection">Lifted</label>
+									<input type="checkbox" name="applicable" id="lifted" value="lifted" tabindex="22" />
+									<label for="lifted" class="selection">Lifted</label>
 								</div>
+								
 								<div class="floatLeft list">
-								<input type="checkbox" name="applicable" id="wheel" value="wheel" tabindex="23" />
-								<label for="wheel" class="selection">Custom Wheel Size</label>
+									<input type="checkbox" name="applicable" id="wheel" value="wheel" tabindex="23" />
+									<label for="wheel" class="selection">Custom Wheel Size</label>
 								</div>
+								
 								<div class="floatLeft list">
-								<input type="checkbox" name="applicable" id="other" value="other" tabindex="24" />
-								<label for="other" class="selection">Other</label>
+									<input type="checkbox" name="applicable" id="other" value="other" tabindex="24" />
+									<label for="other" class="selection">Other</label>
 								</div>
+								
 							</div>
 						
 							<div class="item group">
@@ -212,7 +243,9 @@
 						</div>
 					
 					</fieldset>
+					<!-- END OF VEHICLE SECTION -->
 					
+					<!-- NOTES SECTION -->
 					<fieldset title="Notes">
 						<legend>Notes</legend>
 						
@@ -220,27 +253,33 @@
 							<label for="other-comments"></label>
 							<textarea id="other-comments" placeholder="If you'd like to ask us questions or provide other comments for specifications about your vehicle, feel free to do so in this text box..." autocomplete="off" tabindex="25" rows="6"></textarea>
 						</div>
-						
 					</fieldset>
+					<!-- END OF NOTE SECTION -->
 					
 					<p>We look forward to doing business with you!</p>
 					
-					<input type="submit" value="Submit Quote Request">
-				
-					
+					<input type="submit" value="Submit Quote Request"><!--  SUBMIT BUTTON -->
 				
 				</form>
+				<!-- END OF REQUEST QUOTE FORM -->
+
 				
-				
-				
-			</div>
+			</div> <!-- END OF MAIN CONTENT DIV -->
 		
-		
+			
+			<!-- START OF THE FOOTER -->
 			<footer>
-				<p>Home &nbsp;|&nbsp; Contact &nbsp;|&nbsp; Request a Quote &nbsp;|&nbsp; Terms & Conditions &nbsp;|&nbsp; Documents &nbsp;|&nbsp; FAQs &nbsp;|&nbsp; Rate Us</p>
+				
+				<p><a href="index.html">Home</a> &nbsp;|&nbsp; <a href="#">Contact</a> &nbsp;|&nbsp; <a href="index.html">Request a Quote</a> &nbsp;|&nbsp; <a href="#">Terms & Conditions</a> &nbsp;|&nbsp; <a href="#">Documents</a> &nbsp;|&nbsp; <a href="#">FAQs</a> &nbsp;|&nbsp; <a href="#">Rate Us</a></p>
+				
+				<p>&copy; 2015 Jessica J. Hernandez</p>
+				
+				<p>Resources used: <a href="http://www.google.com/imgres?imgurl=http://2.bp.blogspot.com/-Hupp-3mCm40/T8wDz114PlI/AAAAAAAADpU/7xJXw_-s1Pg/s1600/2012-05-28%252BMinnesota%252BBack%252BRoads.wp.jpg&imgrefurl=http://don-denver.blogspot.com/2012/05/travelogue-minnesota-lutefisk-capital.html&h=1000&w=1600&tbnid=KkzJJWNguEw5RM:&zoom=1&docid=zk7kpDbF0R7MMM&hl=en&ei=M_2_VOKwK4OgNtjRg8AD&tbm=isch&ved=0CFYQMygrMCs">Road image: Google Images</a>, <a href="https://www.iconfinder.com/icons/65678/cone_traffic_vlc_icon#size=48">Cone Icon: Iconfinder.com</a>, Map Image: made it myself.</p>
+
 			</footer>
+			<!-- END OF THE FOOTER -->
 		
-		</div>
+		</div> <!-- END OF CONTAINER DIV -->
 	
 	</body>
 	
