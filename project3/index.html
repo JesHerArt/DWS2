@@ -66,7 +66,7 @@
 						<li><a href="#">Documents</a></li>
 						<li><a href="#">FAQs</a></li>
 						<li><a href="#">Rate Us</a></li>
-					<ul>
+					</ul>
 				</nav>
 			</div>
 			<!-- END OF SMALL NAV -->
@@ -97,7 +97,7 @@
 				
 				
 				<!-- START OF REQUEST QUOTE FORM -->
-				<form id="quote" class="group" action="mailto:jesherart@fullsail.edu?subject=Request a Quote Form" method="POST" enctype="text/plain">
+				<form id="quote" class="group" action="mailto:jesherart@fullsail.edu" method="POST" enctype="text/plain">
 				
 					<!-- START OF CONTACT SECTION -->
 					<fieldset title="Contact Information">
@@ -105,17 +105,17 @@
 						
 						<div class="item group">
 							<label for="name">Full Name<span>*</span></label>
-							<input type="text" name="name" id="name" placeholder="John Doe" required aria-required="true" autocomplete="off" tabindex="1" />
+							<input type="text" name="name" id="name" placeholder="John Doe" required  autocomplete="off" tabindex="1" />
 						</div>
 						
 						<div class="item group">
 							<label for="phone">Phone Number<span>*</span></label>
-							<input type="tel" name="phone" id="phone" placeholder="(000) 000-0000" required aria-required="true" autocomplete="off" tabindex="2" />
+							<input type="tel" name="phone" id="phone" placeholder="(000) 000-0000" required  autocomplete="off" tabindex="2" />
 						</div>
 						
 						<div class="item group">
 							<label for="e-mail">E-mail<span>*</span></label>
-							<input type="email" name="e-mail" id="e-mail" placeholder="my_name@example.com" required aria-required="true" autocomplete="off" tabindex="3" />
+							<input type="email" name="e-mail" id="e-mail" placeholder="my_name@example.com" required  autocomplete="off" tabindex="3" />
 						</div>
 						
 					</fieldset>
@@ -128,28 +128,28 @@
 						<div class="floatLeft destPart1">
 							<div class="item group">
 								<label for="pick-up">Pick-Up Address<span>*</span></label>
-								<input type="text" name="pick-up" id="pick-up" placeholder="City" required aria-required="true" autocomplete="off" tabindex="4" class="col"/>
-								<input type="text" name="pick-up" id="pick-up" placeholder="State" required aria-required="true" autocomplete="off" tabindex="5" class="col"/>
-								<input type="number" name="pick-up" id="pick-up" placeholder="Zip Code" required aria-required="true" autocomplete="off" tabindex="6" class="col"/>
+								<input type="text" name="pick-up" id="pick-up" placeholder="City" required  autocomplete="off" tabindex="4" class="col"/>
+								<input type="text" name="pick-up" id="pick-up1" placeholder="State" required  autocomplete="off" tabindex="5" class="col"/>
+								<input type="number" name="pick-up" id="pick-up2" placeholder="Zip Code" required  autocomplete="off" tabindex="6" class="col"/>
 							</div>
 						
 							<div class="item group">
 								<label for="pick-date">Desired Pick-Up Date<span>*</span></label>
-								<input type="date" name="pick-date" id="pick-date" required aria-required="true" autocomplete="off" tabindex="7" />
+								<input type="date" name="pick-date" id="pick-date" required autocomplete="off" tabindex="7" />
 							</div>
 						</div>
 						
 						<div class="floatLeft destPart2">
 							<div class="item group">
 								<label for="drop-off">Drop-Off Address<span>*</span></label>
-								<input type="text" name="drop-off" id="drop-off" placeholder="City" required aria-required="true" autocomplete="off" tabindex="8" class="col"/>
-								<input type="text" name="drop-off" id="drop-off" placeholder="State" required aria-required="true" autocomplete="off" tabindex="9" class="col"/>
-								<input type="number" name="drop-off" id="drop-off" placeholder="Zip Code" required aria-required="true" autocomplete="off" tabindex="10" class="col"/>
+								<input type="text" name="drop-off" id="drop-off" placeholder="City" required  autocomplete="off" tabindex="8" class="col"/>
+								<input type="text" name="drop-off" id="drop-off1" placeholder="State" required  autocomplete="off" tabindex="9" class="col"/>
+								<input type="number" name="drop-off" id="drop-off2" placeholder="Zip Code" required  autocomplete="off" tabindex="10" class="col"/>
 							</div>
 						
 							<div class="item group">
 								<label for="drop-date">Desired Drop-Off Date<span>*</span></label>
-								<input type="date" name="drop-date" id="drop-date" required aria-required="true" autocomplete="off" tabindex="11" />
+								<input type="date" name="drop-date" id="drop-date" required  autocomplete="off" tabindex="11" />
 							</div>
 						</div>
 						
@@ -175,8 +175,8 @@
 						<div class="floatLeft vehPart1">
 							<div class="item group">
 								<label for="car-type">Vehicle Type<span>*</span></label>
-								<select id="car-type" required aria-required="true"  tabindex="14">
-									<option value="choose">Choose..</option>
+								<select id="car-type" required  tabindex="14">
+									<option value="">Choose..</option>
 									<option value="sedan">Sedan</option>
 									<option value="pick-up truck">Pick-up truck</option>
 									<option value="suv">SUV</option>
@@ -195,17 +195,17 @@
 						
 							<div class="item group">
 								<label for="year">Vehicle Year<span>*</span></label>
-								<input class="no-Col-Input" type="number" name="year" id="year" placeholder="YYYY" required aria-required="true" autocomplete="off" tabindex="17" />
+								<input class="no-Col-Input" type="number" name="year" id="year" placeholder="YYYY" required autocomplete="off" tabindex="17" />
 							</div>
 							
 							<div class="item group">
 								<label for="make">Vehicle Make<span>*</span></label>
-								<input class="no-Col-Input" type="text" name="make" id="make" placeholder="Ex: Nissan" required aria-required="true" autocomplete="off" tabindex="18" />
+								<input class="no-Col-Input" type="text" name="make" id="make" placeholder="Ex: Nissan" required  autocomplete="off" tabindex="18" />
 							</div>
 							
 							<div class="item group">
 								<label for="model">Vehicle Model<span>*</span></label>
-								<input class="no-Col-Input" type="text" name="model" id="model" placeholder="Ex: Sentra" required aria-required="true" autocomplete="off" tabindex="19" />
+								<input class="no-Col-Input" type="text" name="model" id="model" placeholder="Ex: Sentra" required autocomplete="off" tabindex="19" />
 							</div>
 						</div>
 						
@@ -242,7 +242,7 @@
 						
 							<div class="item group">
 								<label for="comments">Applicable Comments</label> <br>
-								<textarea id="comments" placeholder="If one or more options from above checkboxes are selected, please state the length/height/sizes here..." autocomplete="off" tabindex="25" rows="6" cols="24"></textarea>
+								<textarea id="comments" placeholder="If one or more options from above checkboxes are selected, please state the length/height/sizes here..."  tabindex="25" rows="6" cols="24"></textarea>
 							</div>
 						</div>
 					
@@ -255,7 +255,7 @@
 						
 						<div class="item group">
 							<label for="other-comments"></label>
-							<textarea id="other-comments" placeholder="If you'd like to ask us questions or provide other comments for specifications about your vehicle, feel free to do so in this text box..." autocomplete="off" tabindex="25" rows="6"></textarea>
+							<textarea id="other-comments" placeholder="If you'd like to ask us questions or provide other comments for specifications about your vehicle, feel free to do so in this text box..."  tabindex="25" rows="6"></textarea>
 						</div>
 					</fieldset>
 					<!-- END OF NOTE SECTION -->
@@ -278,7 +278,7 @@
 				
 				<p>&copy; 2015 Jessica J. Hernandez</p>
 				
-				<p>Resources used: <a href="http://www.google.com/imgres?imgurl=http://2.bp.blogspot.com/-Hupp-3mCm40/T8wDz114PlI/AAAAAAAADpU/7xJXw_-s1Pg/s1600/2012-05-28%252BMinnesota%252BBack%252BRoads.wp.jpg&imgrefurl=http://don-denver.blogspot.com/2012/05/travelogue-minnesota-lutefisk-capital.html&h=1000&w=1600&tbnid=KkzJJWNguEw5RM:&zoom=1&docid=zk7kpDbF0R7MMM&hl=en&ei=M_2_VOKwK4OgNtjRg8AD&tbm=isch&ved=0CFYQMygrMCs">Road image: Google Images</a>, <a href="https://www.iconfinder.com/icons/65678/cone_traffic_vlc_icon#size=48">Cone Icon: Iconfinder.com</a>, Map Image: made it myself.</p>
+				<p>Resources used: <a href="http://www.google.com/imgres?imgurl=http://2.bp.blogspot.com/-Hupp-3mCm40/T8wDz114PlI/AAAAAAAADpU/7xJXw_-s1Pg/s1600/2012-05-28%252BMinnesota%252BBack%252BRoads.wp.jpg&amp;.)imgrefurl=http://don-denver.blogspot.com/2012/05/travelogue-minnesota-lutefisk-capital.html&amp;.)h=1000&amp;.)w=1600&amp;.)tbnid=KkzJJWNguEw5RM:&amp;.)zoom=1&amp;.)docid=zk7kpDbF0R7MMM&amp;.)hl=en&amp;.)ei=M_2_VOKwK4OgNtjRg8AD&amp;.)tbm=isch&amp;.)ved=0CFYQMygrMCs">Road image: Google Images</a>, <a href="https://www.iconfinder.com/icons/65678/cone_traffic_vlc_icon#size=48">Cone Icon: Iconfinder.com</a>, Map Image: made it myself.</p>
 
 			</footer>
 			<!-- END OF THE FOOTER -->
