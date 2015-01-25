@@ -7,11 +7,11 @@
 		console.log("testing js to make sure it's running");
 
 		$(window).scroll(function() {
-			if( $(window).scrollTop() > 120 ) {
+			if( $(window).scrollTop() > 90 ) {
 				console.log("testing one");
 				$(".main-nav").addClass("main-nav-scrolled");
 			}
-			else if( $(window).scrollTop() < 120 ){
+			else if( $(window).scrollTop() < 90 ){
 				$(".main-nav").removeClass("main-nav-scrolled");
 				console.log("testing two");
 			}

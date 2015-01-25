@@ -48,7 +48,6 @@ footer {
 
 	
 .main-nav {
-/* 	position: relative; */
 	width: 70%;
 	background-color: rgba(255,255,255,0.5);
 	margin: 2% 0;
@@ -103,7 +102,6 @@ header {
 	font-size: 225%;
 	line-height: 1%;
 	margin: 1% 0 2% 0;
-/* 	background-color: CornflowerBlue; */
 	float: left;
 	}
 	
@@ -259,6 +257,19 @@ h3 {
 	
 	#container, header, nav, footer {
 		width: 90%;
+		}
+		
+	.main-nav {
+		width: 100%;
+		margin: 0;
+		float: none;
+		}
+	
+	header {
+		width: 100%;
+	/* 	margin: 1% auto; */
+		font-size: 225%;
+		float: none;
 		}
 	
 	
