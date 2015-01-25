@@ -1,0 +1,317 @@
+/* 
+		Jessica J. Hernandez
+		Week 4 - Site 1
+		DWS-2 201501-01
+		January 24, 2015
+ */
+ 
+body {
+background: LightCyan;
+
+ 	}
+
+#container {
+	position: relative;
+	width: 100%;
+/* 	background-color: HoneyDew; */
+	margin: 2% auto;
+ 	}
+ 	
+div#callToAction {
+	width: 100%;
+ 	position: relative;
+ 	background-color: LightSteelBlue;
+ 	height: 500px;  /*  500px / 1183px  */
+ 	background: url("../images/akumal.jpg");
+ 	background-repeat:no-repeat;
+	background-size:contain;
+	background-position:center;
+ 	}
+
+#mainContent, #secondaryContent, #connectContent {
+	position: relative;
+ 	background-color: LightSteelBlue;
+	width: 96%;
+	padding: 2%;
+	margin: 2% auto;
+	overflow: auto;
+	}
+	
+footer {
+	width: 90%;
+	margin: 1% auto;
+	background-color: CornflowerBlue;
+	text-align: center;
+	padding: 3% 5%;
+	}
+	
+.main-nav-scrolled {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	margin: 0;
+	float: none;
+	z-index:1;
+	}
+	
+.main-nav {
+/* 	position: relative; */
+	width: 70%;
+	background-color: rgba(255,255,255,0.5);
+	margin: 2% 0;
+	padding: 2% 0;
+	text-align: center;
+	float: left;
+	z-index: 150;
+	}
+	
+
+	
+.rectangle {
+	width: 42.95773457%;  /*  531.85px / 1183px  */
+	height: 265.925px; 
+	background: salmon;
+	}
+	
+.square {
+	width: 20.47886729%;  /* 265.925px / 1183px  */
+	height: 265.925px; 
+	background: salmon;
+	}
+	
+.galleryImage {
+	margin: 0 0 4.5% 4.5%;
+	}
+	
+.floatLeft {
+	float: left;
+	}
+	
+.clear {
+	clear: both;
+	}
+	
+h1 {
+	font-family: 'Leckerli One', cursive;
+	}
+	
+header {
+	width: 30%;
+	text-align: center;
+	font-size: 225%;
+	line-height: 1%;
+	margin: 1% 0 2% 0;
+/* 	background-color: CornflowerBlue; */
+	float: left;
+	}
+	
+h2 {
+	font-family: 'Playfair Display', serif;
+	font-size: 70%;
+	}
+
+.divButton {
+	position: relative;
+	display: inline-block;
+	margin: 0 2%;
+	padding: 1% 2%;
+	border: 1px solid #6D7F7A;
+	border-radius: 5px;
+	background-color: #8DFFDF;
+	color: #234038;
+	}
+	
+.divButtonLink {
+	position:absolute;
+    width:100%;
+    height:100%;
+    left:0;
+    top:0;
+	}
+	
+#mainContent > div, #secondaryContent > div {
+	width: 44%;
+	float: left;
+	padding: 0 3%;
+	line-height: 1.7em;
+	}
+	
+#mainContent span:first-child {
+	font-weight: bold;
+	font-size: 2em;
+	}
+
+h3 {
+	margin-botom: 2%;
+	border-bottom: 1px solid black;
+	}
+ 
+ 
+ 
+
+
+/* _____________________________________ */
+/*              MAIN STYLES              */
+/* _____________________________________ */
+
+
+
+	
+	
+/* _____________________________________ */
+/*              NAVIGATION               */
+/* _____________________________________ */
+
+
+
+/* _____________________________________ */
+/*           HEADINGS & TEXT             */
+/* _____________________________________ */
+
+
+
+
+
+/* _____________________________________ */
+/*                 LINKS                 */
+/* _____________________________________ */
+
+
+
+
+/* _____________________________________ */
+/*                 FORM                  */
+/* _____________________________________ */
+
+/* nomalizing the form elements section */
+
+		input[type="text"], input[type="email"], input[type="number"], input[type="tel"] {  
+			-webkit-appearance: none;
+			-moz-appearance: none;
+			border: none;
+			background: none;
+			-webkit-border-radius: 0;
+			-moz-border-radius: 0;
+			border-radius: 0;
+			padding: 0;
+			margin: 0;
+			}
+	
+		input[type="date"] {   
+			-webkit-appearance: normal;
+			-moz-appearance: normal;
+			}
+	
+		.group:before, .group:after {   
+			content: "\0020";
+			display: block;
+			height: 0;
+			overflow: hidden;
+			}
+	
+		.group:after {  
+			clear: both;
+			}
+	
+			
+/* basic form elements section */
+	
+		
+
+
+
+/* _____________________________________ */
+/*                IMAGES                 */
+/* _____________________________________ */
+
+
+
+
+
+/* _____________________________________ */
+/*             MEDIA QUERIES             */
+/* _____________________________________ */
+
+/* Desktops and laptops */
+@media only screen 
+	and (min-width : 900px) {
+
+	/* ----------- MAIN STYLE ------------ */
+	
+	/* ----------- NAVIGATION ------------- */
+	
+	
+	}
+	
+	
+	
+/* Tablets (portrait) Mainly iPad */
+@media only screen
+	and (min-device-width: 768px)
+	and (max-device-width: 899px)
+	and (orientation: portrait),
+	(min-width : 768px)
+	and (max-width : 899px) {
+	
+	/* ----------- MAIN STYLE ------------ */
+	
+	#container, header, nav, footer {
+		width: 90%;
+		}
+	
+	
+	/* ----------- NAVIGATION ------------- */
+	
+
+		
+	}
+		
+	
+		
+/* Shared Properties: Smartphones & Tablets */
+@media only screen
+	and (max-device-width: 898px),
+	(max-width : 898px) {
+	
+	
+	
+	}
+
+	
+	
+	
+/* Smartphones (portrait & landscape) Mainly iPhone 4 - 6 */
+@media only screen
+	and (max-device-width: 767px),
+	(max-width : 767px) {
+	
+	/* ----------- MAIN STYLE ------------ */
+	
+	#mainContent > div {
+		width: 94%;
+		float: none;
+		padding: 3% 3%;
+		line-height: 1.5em;
+		}
+	
+	#mainContent span:first-child {
+		font-weight: bold;
+		font-size: 1.9em;
+		line-height: 1.4em;
+		}
+
+	h3 {
+		margin-botom: 1%;
+		border-bottom: 1px solid black;
+		}
+	
+		
+	/* ------------- FORM ---------------- */
+	
+	
+	
+	/* ----------- NAVIGATION ------------- */
+		
+	
+	
+	}
