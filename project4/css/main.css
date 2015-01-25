@@ -6,26 +6,40 @@
  */
  
 body {
-background: LightCyan;
+background: #193441;
 
  	}
 
 #container {
 	position: relative;
 	width: 100%;
-/* 	background-color: HoneyDew; */
 	margin: 2% auto;
  	}
  	
 div#callToAction {
 	width: 100%;
  	position: relative;
- 	background-color: LightSteelBlue;
- 	height: 500px;  /*  500px / 1183px  */
- 	background: url("../images/akumal.jpg");
  	background-repeat:no-repeat;
 	background-size:contain;
 	background-position:center;
+ 	}
+ 	
+ #call-out-title {
+ 	position: absolute;
+ 	width: 23%;
+ 	float: right;
+ 	font-family: 'Playfair Display', serif;
+ 	text-align: right;
+ 	top: 13%;
+ 	right: 5%;
+ 	font-size: 1.7em;
+ 	font-weight: bold;
+ 	font-style: italic;
+ 	color: #5F94F2;
+ 	text-shadow: 1px 1px 1px #91AA9D;
+/*  	box-shadow: 4px 4px 0 #333; */
+ 	background: rgba(252,255,245, 0.7);
+ 	padding: 0 2%;
  	}
 
 #mainContent, #secondaryContent, #connectContent {
@@ -38,18 +52,18 @@ div#callToAction {
 	}
 	
 footer {
-	width: 90%;
-	margin: 1% auto;
+	width: 100%;
+	margin-top: 1%;
 	background-color: CornflowerBlue;
 	text-align: center;
-	padding: 3% 5%;
+	padding: 0;
 	}
 	
 
 	
 .main-nav {
 	width: 70%;
-	background-color: rgba(255,255,255,0.5);
+	background-color: rgba(255,255,255,0.8);
 	margin: 2% 0;
 	padding: 2% 0;
 	text-align: center;
@@ -64,8 +78,10 @@ footer {
 	right: 0;
 	width: 100%;
 	margin: 0;
+	padding: 1%;
 	float: none;
 	z-index:1;
+	box-shadow: 1px 1px 70px #1A2842;
 	}
 	
 .rectangle {
@@ -94,6 +110,8 @@ footer {
 	
 h1 {
 	font-family: 'Leckerli One', cursive;
+	color: #5F94F2;
+	text-shadow: 1px 1px 70px #1A2842;
 	}
 	
 header {
@@ -108,6 +126,8 @@ header {
 h2 {
 	font-family: 'Playfair Display', serif;
 	font-size: 70%;
+	color: #fff;
+	text-shadow: 1px 1px 70px #1A2842;
 	}
 
 .divButton {
@@ -144,6 +164,10 @@ h2 {
 h3 {
 	margin-botom: 2%;
 	border-bottom: 1px solid black;
+	}
+	
+img {
+	max-width: 100%;
 	}
  
  
