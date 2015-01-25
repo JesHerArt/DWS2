@@ -45,14 +45,7 @@ footer {
 	padding: 3% 5%;
 	}
 	
-.main-nav-scrolled {
-	position: fixed;
-	top: 0;
-	width: 100%;
-	margin: 0;
-	float: none;
-	z-index:1;
-	}
+
 	
 .main-nav {
 /* 	position: relative; */
@@ -65,7 +58,16 @@ footer {
 	z-index: 150;
 	}
 	
-
+.main-nav-scrolled {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	margin: 0;
+	float: none;
+	z-index:1;
+	}
 	
 .rectangle {
 	width: 42.95773457%;  /*  531.85px / 1183px  */
@@ -287,10 +289,15 @@ h3 {
 	
 	/* ----------- MAIN STYLE ------------ */
 	
+	#mainContent {
+		padding-bottom: 10%;
+		margin-bottom: 5%;
+		}
+	
 	#mainContent > div {
 		width: 94%;
 		float: none;
-		padding: 3% 3%;
+		padding: 3% 3% 0 3%;
 		line-height: 1.5em;
 		}
 	
@@ -301,7 +308,7 @@ h3 {
 		}
 
 	h3 {
-		margin-botom: 1%;
+		margin: 0 0 1% 0;
 		border-bottom: 1px solid black;
 		}
 	

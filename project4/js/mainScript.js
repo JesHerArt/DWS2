@@ -1,21 +1,21 @@
 (function(){                                            // Self-executing function
 
-    window.onload = init;                               //Adding an event handler for the onload property of the window to invoke the init function.
+    window.onload = init();                               //Adding an event handler for the onload property of the window to invoke the init function.
 
     function init() {  
 
-console.log("helloworld");
+		console.log("testing js to make sure it's running");
 
-var mn = $(".main-nav");
-
-$(window).scroll(function() {
-	if( $(window).scrollTop() > 200 ) {
-		mn.addClass("main-nav-scrolled");
-	}
-	else {
-		mn.removedClass("main-nav-scrolled");
-	}
-});
+		$(window).scroll(function() {
+			if( $(window).scrollTop() > 120 ) {
+				console.log("testing one");
+				$(".main-nav").addClass("main-nav-scrolled");
+			}
+			else if( $(window).scrollTop() < 120 ){
+				$(".main-nav").removeClass("main-nav-scrolled");
+				console.log("testing two");
+			}
+		});
 
 
 
