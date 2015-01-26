@@ -54,9 +54,20 @@ div#callToAction {
 footer {
 	width: 100%;
 	margin-top: 1%;
-	background-color: CornflowerBlue;
 	text-align: center;
 	padding: 0;
+
+	background: #4ECDC4;
+	}
+	
+table {
+	width: 80%;
+	margin: 2% auto;
+	}
+	
+hr {
+	border-top: 1px solid #d7d946;
+	border-bottom: 1px solid #d7d946;
 	}
 	
 
