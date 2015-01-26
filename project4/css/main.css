@@ -55,14 +55,12 @@ footer {
 	width: 100%;
 	margin-top: 1%;
 	text-align: center;
-	padding: 0;
-
 	background: #4ECDC4;
 	}
 	
 table {
 	width: 80%;
-	margin: 2% auto;
+	margin: 0 auto;
 	}
 	
 hr {
@@ -97,18 +95,14 @@ hr {
 	
 .rectangle {
 	width: 42.95773457%;  /*  531.85px / 1183px  */
-	height: 265.925px; 
-	background: salmon;
 	}
 	
 .square {
 	width: 20.47886729%;  /* 265.925px / 1183px  */
-	height: 265.925px; 
-	background: salmon;
 	}
 	
 .galleryImage {
-	margin: 0 0 4.5% 4.5%;
+	margin: 0 0 4.4% 4.4%;
 	}
 	
 .floatLeft {
@@ -117,6 +111,10 @@ hr {
 	
 .clear {
 	clear: both;
+	}
+	
+.clearLeft {
+	clear: left;
 	}
 	
 h1 {
