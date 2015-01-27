@@ -41,6 +41,7 @@
 		<!-- Google Fonts -->
 		<link href='http://fonts.googleapis.com/css?family=Leckerli+One' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Playfair+Display' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Questrial' rel='stylesheet' type='text/css'>
 		
 		
 		<!-- Favicon -->
@@ -52,7 +53,7 @@
 	
 	<body>
 	
-		<header>
+		<header id="top">
 			<h1>Akumal</h1>
 			<h2>Quintana Roo, Mexico</h2>
 		</header>
@@ -81,7 +82,7 @@
 			
 			<!-- START OF MAIN CONTENT DIV -->
 			<div id="mainContent" >
-				<div>
+				<div id="about">
 					<p><span>Akumal means "Place of the Turtle"</span> <br>in the Mayan language, and if you snorkel here, you just might see one swimming alongside you. (Don’t touch it, though. That’s prohibited by law.) You’ll definitely see coral and beautiful fish in the clear, sparkling waters. Akumal is a small beach-front tourist resort community 100 km (62 mi) south of Cancún, between the towns of Playa del Carmen and Tulum. It is located in Tulum Municipality in the state of Quintana Roo, Mexico, and is part of the Riviera Maya area.</p>
 					
 					<h3>History</h3>
@@ -107,39 +108,46 @@
 				
 			</div> <!-- END OF MAIN CONTENT DIV -->
 			
+			<h3>Gallery</h3>
+			<div id="gallery">
+				<div class="rectangle galleryImage">
+					<img src="images/akumal3.jpg" alt="" title=""/>
+				</div>
 			
-			<div class="rectangle galleryImage floatLeft">
-				<img src="images/akumal3.jpg" alt="" title=""/>
-			</div>
+				<div class="square galleryImage">
+					<img src="images/akumal2.jpg" alt="" title=""/>
+				</div>
 			
-			<div class="square galleryImage floatLeft ">
-				<img src="images/akumal2.jpg" alt="" title=""/>
-			</div>
+				<div class="square galleryImage">
+					<img src="images/akumal6.jpg" alt="" title=""/>
+				</div>
 			
-			<div class="square galleryImage floatLeft ">
-				<img src="images/akumal6.jpg" alt="" title=""/>
-			</div>
+				<div class="square galleryImage clear">
+					<img src="images/akumal4.jpg" alt="" title=""/>
+				</div>
 			
-			<div class="square galleryImage floatLeft clear">
-				<img src="images/akumal4.jpg" alt="" title=""/>
-			</div>
+				<div class="square galleryImage">
+					<img src="images/akumal7.jpg" alt="" title=""/>
+				</div>
 			
-			<div class="square galleryImage floatLeft">
-				<img src="images/akumal7.jpg" alt="" title=""/>
-			</div>
-			
-			<div class="rectangle galleryImage floatLeft">
-				<img src="images/akumal5.jpg" alt="" title=""/>
+				<div class="rectangle galleryImage">
+					<img src="images/akumal5.jpg" alt="" title=""/>
+				</div>
 			</div>
 			
 			
 			<!-- START OF SECONDARY CONTENT DIV -->
 			<div id="secondaryContent" class="clear">
-				<div>
-					Video player goes on this side.
+				<div id="video">
+					<h3>Get a glimpse of what to expect when visiting Akumal!</h3>
+					<div class='embed-container'><iframe src='http://www.youtube.com/embed/hsjDnnh5b6U' frameborder='0' allowfullscreen></iframe></div>
 				</div>
 				
-				<div>
+				<div id="info">
+					<h3>Still not convinced?</h3>
+					
+					<p>Fill out the form below to receive an all details brochure and information packet about Akumal straight to your home. Vacation and excursion packages also come listed in the packet.</p>
+					
 					<form id="info-request" class="group" action="mailto:jesherart@fullsail.edu" method="POST" enctype="text/plain">
 						<div class="item group">
 							<label for="name">Full Name<span>*</span></label>
@@ -155,9 +163,10 @@
 						city
 						state
 						zip code
-						sign up for newsletter option
-						
+						sign up for newsletter option	
 					</form>
+					
+					<p style="font:small-caption">Your information will not be sold to any outside sources and is solely for the purpose of sending you more information at your convenience.</p>
 				</div>
 			
 			</div> <!-- END OF SECONDARY CONTENT DIV -->
