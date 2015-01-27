@@ -108,7 +108,7 @@ hr {
 	top: 0;
 	left: 0;
 	right: 0;
-	width: 100%;
+	width: 98%;
 	margin: 0;
 	padding: 1%;
 	float: none;
@@ -226,7 +226,7 @@ img {
 	}
 	
 .rectangle {
-	width: 42.95773457%;  /*  531.85px / 1183px  */
+	width: 40%;  /*  531.85px / 1183px  */
 	}
 	
 .square {
@@ -385,7 +385,7 @@ input[type="submit"]:active {
 		}
 	
 	header {
-		width: 100%;
+		width: 98%;
 		font-size: 225%;
 		float: none;
 		margin-bottom: 5%;
