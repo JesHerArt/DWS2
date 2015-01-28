@@ -78,7 +78,6 @@ header {
 footer {
 	width: 100%;
 	margin-top: 1%;
-	text-align: center;
 	background: #4ECDC4;
 	}
 	
@@ -417,7 +416,7 @@ input[type="submit"]:active {
     color: #89BF68;
     height: 1.875em;
     line-height: 0.9em;
-    width: 100%;
+    width: 97%;
     padding: 0.3em 0 0.2em 0.8em;
     margin-top: 0.12em;
     border: 1px solid #2A6ABA;
