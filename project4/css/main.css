@@ -696,10 +696,11 @@ input[type="submit"]:active {
 
 	}
 	
-/* Smartphones (portrait) Mainly iPhone 4 - 6 */
-@media only screen
-	and (max-device-width: 414px),
-	(max-width : 414px) {
+//* Smartphones (portrait) Mainly iPhone 4 - 6 */
+@media only screen 
+	and (max-device-width: 414px)
+	and (orientation: portrait),
+	(max-width: 414px) {
 	
 	div[class="rectangle galleryImage"], div[class="square galleryImage"], div[class="square galleryImage clear"] {
 		width: 90%;
