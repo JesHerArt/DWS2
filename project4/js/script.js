@@ -1,3 +1,9 @@
+// Jessica J. Hernandez
+// Week 4 - Site 1
+// DWS-2 201501-01
+// January 24, 2015
+
+
 (function(){                                            // Self-executing function
 
     window.onload = init();                               //Adding an event handler for the onload property of the window to invoke the init function.
