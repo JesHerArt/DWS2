@@ -453,6 +453,24 @@ td > h4 {
 	background: -ms-linear-gradient(top,  rgba(237,237,237,1) 0%,rgba(246,246,246,1) 53%,rgba(255,255,255,1) 100%); /* IE10+ */
 	background: linear-gradient(to bottom,  rgba(237,237,237,1) 0%,rgba(246,246,246,1) 53%,rgba(255,255,255,1) 100%); /* W3C */
 	}
+	
+input::-webkit-input-placeholder {
+	font-style: italic;
+	}
+	
+input::-moz-placeholder {
+	font-style: italic;
+	}
+	
+input:-moz-placeholder {   /* Older versions of Firefox */
+	font-style: italic;
+	}
+	
+input:-ms-input-placeholder { 
+	font-style: italic;
+	}
+
+
 
 input[type="submit"] {
 	padding: 1% 6%;
