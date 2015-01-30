@@ -507,18 +507,6 @@ input[type="submit"]:active {
 /*             MEDIA QUERIES             */
 /* _____________________________________ */
 
-/* Desktops and laptops */
-@media only screen 
-	and (min-width : 900px) {
-
-	/* ----------- MAIN STYLE ------------ */
-	
-	/* ----------- NAVIGATION ------------- */
-	
-	
-	}
-	
-	
 	
 /* Tablets (portrait) Mainly iPad */
 @media only screen
@@ -530,7 +518,7 @@ input[type="submit"]:active {
 	
 	/* ----------- MAIN STYLE ------------ */
 	
-	#container, header, nav, footer {
+	#container {
 		width: 90%;
 		}
 		
@@ -557,19 +545,6 @@ input[type="submit"]:active {
 
 		
 	}
-		
-	
-		
-/* Shared Properties: Smartphones & Tablets */
-@media only screen
-	and (max-device-width: 898px),
-	(max-width : 898px) {
-	
-	
-	
-	}
-
-	
 	
 	
 /* Smartphones (portrait & landscape) Mainly iPhone 4 - 6 */
@@ -652,6 +627,19 @@ input[type="submit"]:active {
 		width: 80%;
 		}
 		
+	.main-nav {
+		width: 100%;
+		margin: 0 0 1% 0;
+		float: none;
+		}
+	
+	header {
+		width: 98%;
+		font-size: 225%;
+		float: none;
+		margin-bottom: 5%;
+		}
+		
 		
 
 	/* ------------- FORM ---------------- */
@@ -665,15 +653,10 @@ input[type="submit"]:active {
 	}
 	
 	
-/* Smartphones (portrait) Mainly iPhone 4 - 6 */
+/* Smartphones (portrait or landscape) Mainly iPhone 4 - 6 */
 @media only screen
 	and (max-device-width: 485px),
 	(max-width : 485px) {
-
-	div[class="rectangle galleryImage"], div[class="square galleryImage"], div[class="square galleryImage clear"] {
-		width: 90%;
-		margin: 2% 6%;
-		}
 	
 	.hide {
 		display: none;
@@ -686,6 +669,23 @@ input[type="submit"]:active {
 		
 	.forms {
 		margin-top: 3%;
+		}
+		
+	.divButton {
+		margin: 0 1%;
+		padding: 1% 1%;
+		}
+
+	}
+	
+/* Smartphones (portrait) Mainly iPhone 4 - 6 */
+@media only screen
+	and (max-device-width: 414px),
+	(max-width : 414px) {
+	
+	div[class="rectangle galleryImage"], div[class="square galleryImage"], div[class="square galleryImage clear"] {
+		width: 90%;
+		margin: 2% 6%;
 		}
 
 	}
