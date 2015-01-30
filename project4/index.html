@@ -22,7 +22,7 @@
 		
 		<!-- JavaScript -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-		<script src="js/mainScript.js"></script>	
+		<script src="js/script.js"></script>	
 		
 		
 		<!-- Google Fonts -->
@@ -39,27 +39,36 @@
 	
 	
 	<body>
-	
+		
+		<!-- START OF HEADER -->
 		<header id="top">
 			<h1>Akumal</h1>
 			<h2>Quintana Roo, Mexico</h2>
-		</header>
+		</header> <!-- END OF HEADER -->
 		
+		
+		<!-- START OF MAIN NAVIGATION -->
 		<nav class="main-nav">
 			<div class="divButton ">Home<a href="index.html"><span class="divButtonLink"></span></a></div>
 			<div class="divButton ">About<a href="#about"><span class="divButtonLink"></span></a></div>
 			<div class="divButton ">Gallery<a href="#galleryContent"><span class="divButtonLink"></span></a></div>
 			<div class="divButton ">Get Info<a href="#info"><span class="divButtonLink"></span></a></div>
-			<div class="divButton ">Connect<a href="#rightCol"><span class="divButtonLink"></span></a></div>
+			<div class="divButton ">Connect<a href="#footTable"><span class="divButtonLink"></span></a></div>
 		</nav>
+		<!-- END OF MAIN NAVIGATION -->
 		
+		
+		<!-- START OF CALL TO ACTION IMAGE -->
 		<div id="callToAction" class="clear">
 				<div id="call-out-title" class="hide">
 					<p>“Akumal, the perfect diving and family destination in the heart of the Riviera Maya”</p>
 				</div>
-				<img src="images/akumal.jpg" alt="" title=""/>
-			</div>
+				<img src="images/akumal.jpg" alt="Sea turtle in Akumal waters image" title="Sea turtle in Akumal waters image"/>
+		</div>
+		<!-- END OF CALL TO ACTION IMAGE -->
 		
+		
+		<!-- START OF CONTAINER DIV -->
 		<div id="container" class="clear">
 
 			<!-- START OF MAIN CONTENT DIV -->
@@ -77,60 +86,73 @@
 					
 					<h3>Interested in Akumal?</h3>
 					
+					<!-- FORM TO SIGN UP FOR EMAILS -->
 					<form id="email-sign-up" class="forms" action="MAILTO:jesherart@fullsail.edu" method="POST" enctype="text/plain">
 					
 						<label><span>Get updates with the latest deals and traveler reviews every week:</span><input id="email2" type="email" name="email2" placeholder="Enter your email address" autocomplete="off" required tabindex="1" /></label>
 						
 						<input type="submit" value="Sign Up">
-						
+	
 					</form>			
 				</div>
 				
 			</div> <!-- END OF MAIN CONTENT DIV -->
 			
 			
+			<!-- START OF GALLERY DIV -->
 			<div id="galleryContent">
 			
 				<h3>Gallery</h3>
 				
 				<div id="gallery">
 					<div class="rectangle galleryImage">
-						<img src="images/akumal3.jpg" alt="" title=""/>
+						<img src="images/akumal3.jpg" alt="Akumal seashore" title="Akumal seashore"/>
 					</div>
 			
 					<div class="square galleryImage">
-						<img src="images/akumal2.jpg" alt="" title=""/>
+						<img src="images/akumal2.jpg" alt="Scuba diving in Akumal beach" title="Scuba diving in Akumal beach"/>
 					</div>
 			
 					<div class="square galleryImage">
-						<img src="images/akumal6.jpg" alt="" title=""/>
+						<img src="images/akumal6.jpg" alt="Group photo of tourists on Akumal beach" title="Group photo of tourists on Akumal beach"/>
 					</div>
 			
 					<div class="square galleryImage clear">
-						<img src="images/akumal4.jpg" alt="" title=""/>
+						<img src="images/akumal4.jpg" alt="Turtle underwater photo" title="Turtle underwater photo"/>
 					</div>
 			
 					<div class="square galleryImage">
-						<img src="images/akumal7.jpg" alt="" title=""/>
+						<img src="images/akumal7.jpg" alt="Photo of the entrance on Akumal beach" title="Photo of the entrance on Akumal beach"/>
 					</div>
 			
 					<div class="rectangle galleryImage">
-						<img src="images/akumal5.jpg" alt="" title=""/>
+						<img src="images/akumal5.jpg" alt="Cannons landmark on Akumal sideshore from the historic shipwreck" title="Cannons landmark on Akumal sideshore from the historic shipwreck"/>
 					</div>
 				</div>
 			</div>
+			<!-- END OF GALLERY DIV -->
 			
 			
 			<!-- START OF SECONDARY CONTENT DIV -->
 			<div id="secondaryContent" class="clear">
 				<div id="video">
 					<h3>Get a glimpse of what to expect when visiting Akumal!</h3>
-					<div class='embed-container'><iframe src='http://www.youtube.com/embed/hsjDnnh5b6U'  allowfullscreen></iframe></div>
+					<div class='embed-container'><iframe src='http://www.youtube.com/embed/hsjDnnh5b6U?rel=0'  allowfullscreen></iframe></div>
+					
+					<div class="videoIcon">
+						<div class='embed-container'><iframe src='http://www.youtube-nocookie.com/embed/aSa2HzzZPlE?rel=0'  allowfullscreen></iframe></div>
+					</div>
+					
+					<div class="videoIcon">
+						<div class='embed-container'><iframe src='http://www.youtube.com/embed/qW5yVUu0o6w?rel=0'  allowfullscreen></iframe></div>
+					</div>
+					
 				</div>
 				
 				<div id="info">
 					<h3>Still not convinced?</h3>
 					
+					<!-- FORM TO SIGN UP TO RECEIVE ADDITIONAL INFO PACKET -->
 					<form id="info-packet-sign-up" class="forms" action="MAILTO:jesherart@fullsail.edu" method="POST" enctype="text/plain">
 						<h4>Informational Packet Form<span>Please fill out the form below to receive an all details brochure and information packet about Akumal straight to your home. Vacation and excursion packages also come listed in the packet.</span></h4>
 						
@@ -147,9 +169,7 @@
 						<p class="clear smallText">Your information will not be sold to any outside sources and is solely for the purpose of sending you more information at your convenience.</p>
 						
 					</form>
-					
-					
-					
+
 				</div>
 			
 			</div> <!-- END OF SECONDARY CONTENT DIV -->
@@ -157,24 +177,27 @@
 		</div> <!-- END OF CONTAINER DIV -->
 		
 		
-		
+		<!-- START OF FOOTER -->
 		<footer>
 		
 			<hr>
 			
-			<!-- Start of footer table -->
+			<!-- START OF FOOTER TABLE -->
 			<table id="footTable">
 				<tr>
+					<!-- WEBSITE LINKS -->
 					<td id="leftCol">
 						<h4>Web links</h4>
 						<a href="index.html">Home</a><br>
 						<a href="#about">About</a><br>
 						<a href="#galleryContent">Gallery</a><br>
 						<a href="#info">Get info</a><br>
-						<a href="#rightCol">Connect</a><br>
+						<a href="#footTable">Connect</a><br>
 						<a href="#top">Back to Top</a><br><br>
 					</td>	
+					
 						
+					<!-- CONTACT INFO -->
 					<td id="middleCol">
 						<h4>Get In Touch</h4>
 						Ph: (52) 984 875 9032<br>
@@ -182,32 +205,39 @@
 						Akumal, Quintana Roo; Mexico
 					</td>
 
+					
+					<!-- CONNECT TO SOCIAL MEDIA INFO -->
 					<td id="rightCol" class="hide">
 						<h4>Connect With Us</h4>
 			
 						<div class="socialMediaIcon">
-							<a href="#"><img src="images/email.png" alt="" title=""/></a>
+							<a href="#"><img src="images/email.png" alt="email icon" title="email icon"/></a>
 						</div>
 			
 						<div class="socialMediaIcon">
-							<a href="https://www.facebook.com/theakumaldiveshop?ref=ts"><img src="images/facebook.png" alt="" title=""/></a>
+							<a href="https://www.facebook.com/theakumaldiveshop?ref=ts"><img src="images/facebook.png" alt="facebook icon" title="facebook icon"/></a>
 						</div>
 			
 						<div class="socialMediaIcon">
-							<a href="#"><img src="images/twitter.png" alt="" title=""/></a>
+							<a href="#"><img src="images/twitter.png" alt="twitter icon" title="twitter icon"/></a>
 						</div>
 		
 						<div class="socialMediaIcon">
-							<a href="#"><img src="images/youtube.png" alt="" title=""/></a>
+							<a href="#"><img src="images/youtube.png" alt="youtube icon" title="youtube icon"/></a>
 						</div>
 					</td>
 				</tr>
-			</table><!-- End of footer table -->
+			</table> <!-- END OF FOOTER TABLER -->
 			
+			
+			<!-- START OF COPYRIGHT & RESOURCES USED SECTION -->
 			<p>&copy; 2015 Jessica J. Hernandez | DWS2 | Week Four Project<br>
-			<span class="smallText">Resources Used: <a href="https://www.flickr.com/photos/leonziegler/7859742476/">Header Image By: Leon Ziegler on Flickr</a> | <a href="https://www.flickr.com/photos/10383800@N08/7245516514/">Gallery Image 1 By: greg.road.trip on Flickr</a> | <a href="https://www.flickr.com/photos/56788475@N00/15207128450/">Gallery Image 2 By: dchrisoh on Flickr</a> | <a href="http://www.bestday.com/Tours/Tulum_Amazing_Snorkeling/Rates/">Gallery Image 3 By: The photographer from Best Day Travel Tours</a> | <a href="https://www.flickr.com/photos/56788475@N00/15207417608/">Gallery Image 4 By: dchrisoh on Flickr</a> | Gallery Image 5 By: Jessica J. Hernandez | <a href="https://www.flickr.com/photos/21018666@N00/2068993167/">Gallery Image 6 By: Joan Rubió on Flickr</a> | <a href="https://www.iconfinder.com/iconsets/flat-3d-social-media">Social Media Icons By: Lokas Software on Iconfinder</a> | <a href="https://www.youtube.com/watch?v=hsjDnnh5b6U">YouTube Video By: Clark Gram</a></span></p>
+			<span class="smallText">Resources Used: <a href="https://www.flickr.com/photos/leonziegler/7859742476/">Header Image By: Leon Ziegler on Flickr</a> | <a href="https://www.flickr.com/photos/10383800@N08/7245516514/">Gallery Image 1 By: greg.road.trip on Flickr</a> | <a href="https://www.flickr.com/photos/56788475@N00/15207128450/">Gallery Image 2 By: dchrisoh on Flickr</a> | <a href="http://www.bestday.com/Tours/Tulum_Amazing_Snorkeling/Rates/">Gallery Image 3 By: The photographer from Best Day Travel Tours</a> | <a href="https://www.flickr.com/photos/56788475@N00/15207417608/">Gallery Image 4 By: dchrisoh on Flickr</a> | Gallery Image 5 By: Jessica J. Hernandez | <a href="https://www.flickr.com/photos/21018666@N00/2068993167/">Gallery Image 6 By: Joan Rubió on Flickr</a> | <a href="https://www.iconfinder.com/iconsets/flat-3d-social-media">Social Media Icons By: Lokas Software on Iconfinder</a> | <a href="https://www.youtube.com/watch?v=hsjDnnh5b6U">Akumal Tour YouTube Video By: Clark Gram</a> | <a href="https://www.youtube.com/watch?v=aSa2HzzZPlE">Akumal Mexico YouTube Video By: JCVdude</a> | <a href="https://www.youtube.com/watch?v=qW5yVUu0o6w">Tripulu HD - Akumal, Mexico YouTube Video By: Jazz Poulin</a></span></p>
+			<!-- END OF COPYRIGHT & RESOURCES USED SECTION -->
 			
 		</footer>
-	</body>
+		<!-- END OF FOOTER -->
+		
+	</body> <!-- END OF DOCUMENT -->
 	
 </html>
